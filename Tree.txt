@@ -12,12 +12,50 @@
 #  Xhttp://somesite/doc.html
 # daarnaast worden alle (toonbare) documenten aytomatisch meegenomen
 
-
-
 +Inzicht Warmtelek     
 Inleiding | Inzicht Warmtelek
 Inleiding | tweede
  # dit zou de eerste pagina moeten zijn, die ook de titel genereert
++Bewonersvragen
++Tab Versie
+
+
++Tabs
+Tab Basis  | Basis
+Tab Details      | Details
+Tab Rm           | Rc Berekening
+Tab Ventilatie   | Ventilatie
+Tab ISDE         | Bereken ISDE
+Tab CV-Tuning
+
+
++BAG Inhoud
+Tab BAG
+
++ Tabs Special
+Tab Constants
+Tab Tabellen
+Tab Truucs
+
++Rapport
+Tab Rapport
+Tab Rapport-WP
+Tab _Text
+
+
++Berekeningen
+EnergieLabel
+
++Model
+IWL evaluatie juni-2023
+Inzicht Warmtelek V3.8
+Inzicht Warmtelek V3.6 vs Casanova  | vs Casanova
+Tab Casanova
+
++ Onduidelijk
+Isolatie soorten
+
+
 
 +Web Vragenlijst
 
@@ -28,6 +66,12 @@ Inleiding
 Slimme Meter    | SM1
 Slimme Meter.pdf  
 Slimme Meter.pdf  | SM3
+
+
+
+
+
+
 
 
 
