@@ -13,17 +13,20 @@
 # daarnaast worden alle (toonbare) documenten aytomatisch meegenomen
 
 
+
++Inzicht Warmtelek     
+Inleiding | tweede
+ # dit zou de eerste pagina moeten zijn, die ook de titel genereert
+
++Web Vragenlijst
+
 +Inleiding
 #Dit is de inleidings tekst
 Inleiding.html
 Inleiding
-
-
-+Inzicht Warmtelek     
-Inzicht WarmteLek.html  | tweede
- # dit zou de eerste pagina moeten zijn, die ook de titel genereert
-
-+Web Vragenlijst
+Slimme Meter    | SM1
+Slimme Meter.pdf  
+Slimme Meter.pdf  | SM3
 
 
 
@@ -33,7 +36,7 @@ Inzicht WarmteLek.html  | tweede
  
   Slimme Meter.pdf
   Slimme Meter
-  Slimme Meter        } Gas 33
+  Slimme Meter        | Gas 33
   Project
   Inleiding
   Inleiding.html
