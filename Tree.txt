@@ -6,8 +6,12 @@
 
 +Inleiding
 #Dit is de inleidings tekst
+Inleiding.html
+Inleiding
 
-+Inzicht Warmtelek
+
++Inzicht Warmtelek     
+Inzicht WarmteLek.html  | tweede
  # dit zou de eerste pagina moeten zijn, die ook de titel genereert
 
 +Web Vragenlijst
@@ -19,4 +23,9 @@
   # een aantal basisbegrippen rondom luchtverwarming en binnen-milieu.
 
   Project
+  Inleiding
+  Inleiding.html
+  Gasverbruik             | Gas 1
+  Gasverbruik.html        | Gas 2
+  
   # Globale omschrijving wat we hebben gedaan en hoe we te werk zijn gegaan.
