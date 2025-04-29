@@ -17,7 +17,7 @@ Inleiding | Inzicht Warmtelek
 Inleiding | tweede
  # dit zou de eerste pagina moeten zijn, die ook de titel genereert
 Bewonersvragen
-Tab Versie     |Versies
+Tab  Versie     |Versies
 Web Vragenlijst
 
 
@@ -31,7 +31,7 @@ Tab  ISDE        | Bereken ISDE
 Tab CV-Tuning
 
 
-+BAG Inhoud
++BAG Inhoud1
 Tab BAG
 
 + Tabs Special
@@ -47,12 +47,12 @@ Tab _Text
 
 +Berekeningen
 EnergieLabel
-Tab S-Calc
+Tab  S-Calc
 
 +Model
 IWL evaluatie juni-2023
 Inzicht Warmtelek V3.8
-Inzicht Warmtelek V3.6   vs   Casanova  | vs Casanova
+Inzicht Warmtelek 3.6   vs   CASAnova 3.3.08a  | vs Casanova
 Tab Casanova
 
 + Onduidelijk
