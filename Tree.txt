@@ -16,16 +16,18 @@
 Inleiding | Inzicht Warmtelek
 Inleiding | tweede
  # dit zou de eerste pagina moeten zijn, die ook de titel genereert
-+Bewonersvragen
-+Tab Versie
+Bewonersvragen
+Tab Versie     |Versies
+Web Vragenlijst
 
 
 +Tabs
-Tab Basis  | Basis
+Tab Basis        | Basis
 Tab Details      | Details
 Tab Rm           | Rc Berekening
 Tab Ventilatie   | Ventilatie
-Tab ISDE         | Bereken ISDE
+Ventilatie
+Tab  ISDE        | Bereken ISDE
 Tab CV-Tuning
 
 
@@ -33,31 +35,32 @@ Tab CV-Tuning
 Tab BAG
 
 + Tabs Special
-Tab Constants
-Tab Tabellen
+Tab  Constants
+Tab  Tabellen
 Tab Truucs
 
 +Rapport
-Tab Rapport
+Tab  Rapport
 Tab Rapport-WP
 Tab _Text
 
 
 +Berekeningen
 EnergieLabel
+Tab S-Calc
 
 +Model
 IWL evaluatie juni-2023
 Inzicht Warmtelek V3.8
-Inzicht Warmtelek V3.6 vs Casanova  | vs Casanova
+Inzicht Warmtelek V3.6   vs   Casanova  | vs Casanova
 Tab Casanova
 
 + Onduidelijk
 Isolatie soorten
+Tabbladen
+Temperatuur en Comfort
+Warmtepomp
 
-
-
-+Web Vragenlijst
 
 +Inleiding
 #Dit is de inleidings tekst
@@ -68,13 +71,6 @@ Slimme Meter.pdf
 Slimme Meter.pdf  | SM3
 
 
-
-
-
-
-
-
-
 +Algemeen
   # In deze paragraaf beschrijven we een aantal zaken over het project, het projektteam en
   # een aantal basisbegrippen rondom luchtverwarming en binnen-milieu.
@@ -82,7 +78,6 @@ Slimme Meter.pdf  | SM3
   Slimme Meter.pdf
   Slimme Meter
   Slimme Meter        | Gas 33
-  Project
   Inleiding
   Inleiding.html
   Gasverbruik             | Gas 1
