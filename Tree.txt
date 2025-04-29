@@ -15,6 +15,7 @@
 
 
 +Inzicht Warmtelek     
+Inleiding | Inzicht Warmtelek
 Inleiding | tweede
  # dit zou de eerste pagina moeten zijn, die ook de titel genereert
 
