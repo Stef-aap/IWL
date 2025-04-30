@@ -12,13 +12,21 @@
 #  Xhttp://somesite/doc.html
 # daarnaast worden alle (toonbare) documenten aytomatisch meegenomen
 
-+Inzicht Warmtelek     
-Inleiding | Inzicht Warmtelek
-Inleiding | tweede
- # dit zou de eerste pagina moeten zijn, die ook de titel genereert
-Bewonersvragen
-Tab  Versie     |Versies
-Web Vragenlijst
++Inzicht Warmtelek
+
+#Inzicht Warmtelek is rekenblad waarmee je op eenvoudige wijze inzicht kunt krijgen in het energieverlies van een woning.
+#Het programma is geschreven in Excel, is open source en wordt aangeboden onder de FreeBSD licentie.
+#
+#Deze website bevat alle documentatie en achtergrond informatie over het programma Inzicht Warmtelek.
+#Voor een simpel gebruik wordt geadviseerd om  .... te lezen.
+#Voor een geadvanceerd gebruik wordt geadviseerd om aanvullend ... te lezen.
+#De resterende informatie kan interessant zijn als je meer achtergrond informatie wilt hebben, of zelf wijzigingen in het #programma wilt aanbrengen of zelf een dergelijk programma of delen daarvan zou willen bouwen.
+#Suggesties voor verbetering van het programma zijn van harte welkom.
+#Ook nuttige toevoegingen aan deze documentatie zien wij graag tegemoet.
+
+  Inleiding | Inzicht Warmtelek
+  Web Vragenlijst
+  Tab  Versie     | Versie Historie
 
 
 +Tabs
@@ -51,8 +59,9 @@ Tab  S-Calc
 
 +Model
 IWL evaluatie juni-2023
-Inzicht Warmtelek V3.8
-Inzicht Warmtelek 3.6   vs   CASAnova 3.3.08a  | vs Casanova
+Inzicht Warmtelek V3.8.html | IWL V3.8?
+#Inzicht Warmtelek 3.6   vs   CASAnova 3.3.08a  | vs CASAnova
+Inzicht Warmtelek 3.6   vs   CASAnova 3.3.08a.html  | vs CASAnova
 Tab Casanova
 
 + Onduidelijk
@@ -60,36 +69,24 @@ Isolatie soorten
 Tabbladen
 Temperatuur en Comfort
 Warmtepomp
-
-
-+Andere Modellen
-
-https://www.buildwise.be/nl/agenda/online-dimensionering-van-de-verwarming-de-heatload-tool-voor-warmteverliesberekening-in-woningen/      | Buildwise z
-Xhttps://www.buildwise.be/nl/agenda/online-dimensionering-van-de-verwarming-de-heatload-tool-voor-warmteverliesberekening-in-woningen/     | met X
-https://www.buildwise.be/nl/expertise-ondersteuning/buildwise-tools/heatload-warmteverlies/   |Heatload
-Xhttps://www.buildwise.be/nl/expertise-ondersteuning/buildwise-tools/heatload-warmteverlies/   |Heatload X
-Casanova.com
-
-
-+Inleiding
-#Dit is de inleidings tekst
-Inleiding.html
-Inleiding
-Slimme Meter    | SM1
-Slimme Meter.pdf  
-Slimme Meter.pdf  | SM3
-
-
-+Algemeen
   # In deze paragraaf beschrijven we een aantal zaken over het project, het projektteam en
   # een aantal basisbegrippen rondom luchtverwarming en binnen-milieu.
  
-  Slimme Meter.pdf
-  Slimme Meter
-  Slimme Meter        | Gas 33
-  Inleiding
-  Inleiding.html
   Gasverbruik             | Gas 1
   Gasverbruik.html        | Gas 2
   
   # Globale omschrijving wat we hebben gedaan en hoe we te werk zijn gegaan.
+
++Andere Modellen
+
+  Xhttps://www.buildwise.be/nl/expertise-ondersteuning/buildwise-tools/heatload-warmteverlies/   | Heatload
+
+  Xhttps://www.buildwise.be/nl/agenda/online-dimensionering-van-de-verwarming-de-heatload-tool-voor-warmteverliesberekening-in-woningen/     | Heatload webinar
+
+  http://nesa1.uni-siegen.de/softlab/download/CASAnova_Setup.exe  | Casanova Download
+
+
+
+Slimme Meter.pdf  | SM3
+
+
