@@ -64,8 +64,10 @@ Warmtepomp
 
 +Andere Modellen
 
-https://www.buildwise.be/nl/agenda/online-dimensionering-van-de-verwarming-de-heatload-tool-voor-warmteverliesberekening-in-woningen/
-https://www.buildwise.be/nl/expertise-ondersteuning/buildwise-tools/heatload-warmteverlies/
+https://www.buildwise.be/nl/agenda/online-dimensionering-van-de-verwarming-de-heatload-tool-voor-warmteverliesberekening-in-woningen/      | Buildwise z
+Xhttps://www.buildwise.be/nl/agenda/online-dimensionering-van-de-verwarming-de-heatload-tool-voor-warmteverliesberekening-in-woningen/     | met X
+https://www.buildwise.be/nl/expertise-ondersteuning/buildwise-tools/heatload-warmteverlies/   |Heatload
+Xhttps://www.buildwise.be/nl/expertise-ondersteuning/buildwise-tools/heatload-warmteverlies/   |Heatload X
 Casanova.com
 
 
