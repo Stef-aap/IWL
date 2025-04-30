@@ -62,6 +62,13 @@ Temperatuur en Comfort
 Warmtepomp
 
 
++Andere Modellen
+
+https://www.buildwise.be/nl/agenda/online-dimensionering-van-de-verwarming-de-heatload-tool-voor-warmteverliesberekening-in-woningen/
+https://www.buildwise.be/nl/expertise-ondersteuning/buildwise-tools/heatload-warmteverlies/
+Casanova.com
+
+
 +Inleiding
 #Dit is de inleidings tekst
 Inleiding.html
