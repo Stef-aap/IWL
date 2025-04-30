@@ -24,9 +24,11 @@
 #Suggesties voor verbetering van het programma zijn van harte welkom.
 #Ook nuttige toevoegingen aan deze documentatie zien wij graag tegemoet.
 
-  Inleiding | Inzicht Warmtelek
+  Inleiding
+  De Basis Vragen  | Basis Vragen
+  Resultaat
   Web Vragenlijst
-  Tab  Versie     | Versie Historie
+  Tab  Versie      | Versie Historie
 
 
 +Tabs
@@ -34,13 +36,15 @@ Tab Basis        | Basis
 Tab Details      | Details
 Tab Rm           | Rc Berekening
 Tab Ventilatie   | Ventilatie
-Ventilatie
 Tab  ISDE        | Bereken ISDE
 Tab CV-Tuning
 
-
-+BAG Inhoud1
++BAG Inhoud
 Tab BAG
+
++Berekeningen
+  Berekeningen
+  
 
 + Tabs Special
 Tab  Constants
