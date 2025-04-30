@@ -17,18 +17,37 @@
 #Inzicht Warmtelek is rekenblad waarmee je op eenvoudige wijze inzicht kunt krijgen in het energieverlies van een woning.
 #Het programma is geschreven in Excel, is open source en wordt aangeboden onder de FreeBSD licentie.
 #
-#Deze website bevat alle documentatie en achtergrond informatie over het programma Inzicht Warmtelek.
-#Voor een simpel gebruik wordt geadviseerd om  .... te lezen.
+#Deze website bevat alle documentatie en achtergrond informatie over het programma.
+#Voor een simpel gebruik wordt geadviseerd om alle documenten in deze sectie te lezen.
 #Voor een geadvanceerd gebruik wordt geadviseerd om aanvullend ... te lezen.
-#De resterende informatie kan interessant zijn als je meer achtergrond informatie wilt hebben, of zelf wijzigingen in het #programma wilt aanbrengen of zelf een dergelijk programma of delen daarvan zou willen bouwen.
+#De resterende informatie kan interessant zijn als je meer achtergrond informatie wilt hebben over hoe iets berekend is, of zelf wijzigingen in het programma wilt aanbrengen of zelf een dergelijk programma of delen daarvan zou willen bouwen.
 #Suggesties voor verbetering van het programma zijn van harte welkom.
-#Ook nuttige toevoegingen aan deze documentatie zien wij graag tegemoet.
+#Behoefte aan bepaalde documentatie of extra uitleg, wij zien de vragen graag tegemoet.
 
   Inleiding
+# De belangrijkste eigenschappen van dit programma, de vragen en het belangrijkste dat het oplevert.  
   De Basis Vragen  | Basis Vragen
+# De Basisvragen en een toelichting hierop, plus een paar bijzondere velden op het basis-blad.
   Resultaat
+#Uitgebreide bespreking van alle resultaten op het basis-blad
+  Gasverbruik
+#Sommige bewoners hebben erg veel moeite om hun jaarrrekening en dus het jaarverbruik boven tafel te krijgen. Op het basisblad is een tabel aanwezig, waarmee je behoorlijk goed het jaarverbruik kunt schatten aan dee hand van het gasverbuik in 2 of 3 wintermaanden.
   Web Vragenlijst
+#De Basisvragen zoals we die aan bewoners opsturen voordat we bij ze op bezoek gaan. Het blijkt dat nagenoeg iedereen deze vragenlijst correct kan invullen. Hij is zowel beschikaar in een Teams- als in een Google versie.  
   Tab  Versie      | Versie Historie
+#Hierin worden de meeste wijzigingen per versie bijgehouden. Het is dus interessant om hier af en toe te kijken of er nog iets nieuws van uw gading is bijgekomen, of dat er belangrijke correcties zijn aangebracht. 
+
++Details
+#Deze sectie is alleen voor gevorderden.
+#In deze sectie worden het tabblad "Details" uitgebreid besproken. Als het berekende gasverbruik veel afwijkt van het werkelijk gasverbruik, kunnen hier de meeste instellingen die betrekking hebben op de woning worden aangepast. Stel bijvoorbeeld het programma maakt een fors afwijkende schatting van het vloeroppervlakte of van de isolatiewaarde van de vloer, dan kunnen in het blad Details, deze parameters eenvoudig worden gewijzgd. Bij de meeste parameters zie je in het tabblad Details ook direct wat de gevolgen zijn, in de zin van gasbverbruik, van de aanpassingen die je doet.
+#Om een beter begrip van de grootheden te krijgen, wordt hier soms ook al wat meer uitgelegd van de toegepaste rekenmethode in het model.
+  Tab Details      | Details
+  Woningtypen
+  Vloer
+  Muur
+  Glas
+  Dak
+  Ventilatie
 
 
 +Tabs
