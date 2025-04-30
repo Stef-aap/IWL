@@ -12,8 +12,7 @@
 #  Xhttp://somesite/doc.html
 # daarnaast worden alle (toonbare) documenten aytomatisch meegenomen
 
-+Inzicht Warmtelek
-
+  +Inzicht Warmtelek
 #Inzicht Warmtelek is rekenblad waarmee je op eenvoudige wijze inzicht kunt krijgen in het energieverlies van een woning.
 #Het programma is geschreven in Excel, is open source en wordt aangeboden onder de FreeBSD licentie.
 #
@@ -25,20 +24,44 @@
 #Behoefte aan bepaalde documentatie of extra uitleg, wij zien de vragen graag tegemoet.
 
   Inleiding
-# De belangrijkste eigenschappen van dit programma, de vragen en het belangrijkste dat het oplevert.  
+#De belangrijkste eigenschappen van dit programma, de vragen en het belangrijkste dat het oplevert.  
+
   De Basis Vragen  | Basis Vragen
-# De Basisvragen en een toelichting hierop, plus een paar bijzondere velden op het basis-blad.
+#De Basisvragen en een toelichting hierop, plus een paar bijzondere velden op het basis-blad.
+
   Resultaat
 #Uitgebreide bespreking van alle resultaten op het basis-blad
+
+  Resultaat 2
+# extra informatie en mogelijkheden om commentaar toe te voegen en eigen berekeningen uit te voeren.
+
+  Tab  ISDE        | Bereken ISDE
+
+
+  Uitleg Bewoners
+#Als je de bewoners het basisblad verstrekt, is het goed om deze (of een andere zelf geschreven) uitleg bij te voegen. Meer dan het basisblad geven we meestal niet aan bewoners omdat de rest meer vragen oproet dan beantwoord.
+ 
+  Web Links
+#Een aantal links die behulpzaam kunnen zijn bij het verzamelen van bruikbare informatie voor de bewoners,
+#Hier worden geen links gegeven naar soort gelijke programma's, zie daarvoor ...
+ 
   Gasverbruik
-#Sommige bewoners hebben erg veel moeite om hun jaarrrekening en dus het jaarverbruik boven tafel te krijgen. Op het basisblad is een tabel aanwezig, waarmee je behoorlijk goed het jaarverbruik kunt schatten aan dee hand van het gasverbuik in 2 of 3 wintermaanden.
+#Sommige bewoners hebben erg veel moeite om hun jaarrrekening en dus het jaarverbruik boven tafel te krijgen. Op het basisblad is een tabel aanwezig, waarmee je behoorlijk goed het jaarverbruik kunt schatten aan de hand van het gasverbuik in 2 of 3 wintermaanden. Ik heb een aantal goede ervaringen waarbij ik op basis van het gebruik in jan en feb het verbuik (en de besparing van een aantal maatregelen) in de maand maart heb voorspeld (binnen de 10% nauwkeurig).
+
   Web Vragenlijst
-#De Basisvragen zoals we die aan bewoners opsturen voordat we bij ze op bezoek gaan. Het blijkt dat nagenoeg iedereen deze vragenlijst correct kan invullen. Hij is zowel beschikaar in een Teams- als in een Google versie.  
+#De Basisvragen zoals we die aan bewoners opsturen voordat we bij ze op bezoek gaan. Het blijkt dat nagenoeg iedereen deze vragenlijst correct kan invullen. Hij is zowel beschikaar in een Teams- als in een Google versie. Je kunt deze vragenlijst dus ook gebruik om mensen op afstand van advies te voorzien.
+
+  Temperatuur en Comfort | Temp en Comfort
+#achtergrond informatie welke factoren een rol spelen bij hoe wij comfort ervaren en dat 19 graden en 19 graden niet hetzelfde hoeft te zijn.
+
   Tab  Versie      | Versie Historie
 #Hierin worden de meeste wijzigingen per versie bijgehouden. Het is dus interessant om hier af en toe te kijken of er nog iets nieuws van uw gading is bijgekomen, of dat er belangrijke correcties zijn aangebracht. 
 
-+Details
-#Deze sectie is alleen voor gevorderden.
+  Licentie
+#Tekst van de FreeBSD licentie
+
+  +Details
+#Deze sectie is alleen bestemd voor gevorderden gebruikers.
 #In deze sectie worden het tabblad "Details" uitgebreid besproken. Als het berekende gasverbruik veel afwijkt van het werkelijk gasverbruik, kunnen hier de meeste instellingen die betrekking hebben op de woning worden aangepast. Stel bijvoorbeeld het programma maakt een fors afwijkende schatting van het vloeroppervlakte of van de isolatiewaarde van de vloer, dan kunnen in het blad Details, deze parameters eenvoudig worden gewijzgd. Bij de meeste parameters zie je in het tabblad Details ook direct wat de gevolgen zijn, in de zin van gasbverbruik, van de aanpassingen die je doet.
 #Om een beter begrip van de grootheden te krijgen, wordt hier soms ook al wat meer uitgelegd van de toegepaste rekenmethode in het model.
   Tab Details      | Details
@@ -58,8 +81,6 @@ Tab Ventilatie   | Ventilatie
 Tab  ISDE        | Bereken ISDE
 Tab CV-Tuning
 
-+BAG Inhoud
-Tab BAG
 
 +Berekeningen
   Berekeningen
@@ -69,6 +90,7 @@ Tab BAG
 Tab  Constants
 Tab  Tabellen
 Tab Truucs
+Tab BAG
 
 +Rapport
 Tab  Rapport
@@ -81,11 +103,14 @@ EnergieLabel
 Tab  S-Calc
 
 +Model
-IWL evaluatie juni-2023
-Inzicht Warmtelek V3.8.html | IWL V3.8?
+  IWL evaluatie juni-2023
+  Inzicht Warmtelek V3.8.html | IWL V3.8?
 #Inzicht Warmtelek 3.6   vs   CASAnova 3.3.08a  | vs CASAnova
-Inzicht Warmtelek 3.6   vs   CASAnova 3.3.08a.html  | vs CASAnova
-Tab Casanova
+  Inzicht Warmtelek 3.6   vs   CASAnova 3.3.08a.html  | vs CASAnova
+  Tab Casanova
+  https://www.weii.nl/rekentool | WEii Paris Proof
+#een webbased free tool, die berekent hoe goed op weg je bent naar 2050.
+
 
 + Onduidelijk
 Isolatie soorten
