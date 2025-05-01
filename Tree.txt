@@ -24,22 +24,22 @@
 #Behoefte aan bepaalde documentatie of extra uitleg, wij zien de vragen graag tegemoet.
 
   Inleiding
-#De belangrijkste eigenschappen van dit programma, de vragen en het belangrijkste dat het oplevert.  
+#De belangrijkste eigenschappen van dit programma, de vragen en het belangrijkste resultaat.  
 
   De Basis Vragen  | Basis Vragen
-#De Basisvragen en een toelichting hierop, plus een paar bijzondere velden op het basis-blad.
+#De Basisvragen die minimaal beantwoord moeten worden en een toelichting hierop, plus een paar bijzondere velden op het basis-blad.
 
   Resultaat
-#Uitgebreide bespreking van alle resultaten op het basis-blad
+#Bespreking van de resultaten op het basis-blad
 
   Resultaat 2
-# extra informatie en mogelijkheden om commentaar toe te voegen en eigen berekeningen uit te voeren.
+#Extra informatie, mogelijkheden om commentaar toe te voegen en eigen berekeningen uit te voeren.
 
   Tab  ISDE        | Bereken ISDE
-
+#Dit tabblad berekent voor de geadviseerde isolatieverbeteringen de mogelijke ISDE subsidie. Oppervlakten die door dit model foutief zijn ingeschat kunnen hier worden gecorrigeerd. Het programma houdt rekening met verdubbeling van de subsidie in geval van meerdere maatregelen.
 
   Uitleg Bewoners
-#Als je de bewoners het basisblad verstrekt, is het goed om deze (of een andere zelf geschreven) uitleg bij te voegen. Meer dan het basisblad geven we meestal niet aan bewoners omdat de rest meer vragen oproet dan beantwoord.
+#Als je de bewoners het basisblad verstrekt, is het goed om deze (of een andere zelf geschreven) uitleg bij te voegen. Meer dan het basisblad geven we meestal niet aan bewoners omdat de rest meer vragen oproept dan vragen beantwoord. Dorr in deze tekst de plaatjes te vervangen door de plaatjes van de woning die bekeken wordt en eigen commentaar toe te voegen kan een eenvoudig rapport worden gemaakt.
  
   Web Links
 #Een aantal links die behulpzaam kunnen zijn bij het verzamelen van bruikbare informatie voor de bewoners,
@@ -52,7 +52,7 @@
 #De Basisvragen zoals we die aan bewoners opsturen voordat we bij ze op bezoek gaan. Het blijkt dat nagenoeg iedereen deze vragenlijst correct kan invullen. Hij is zowel beschikaar in een Teams- als in een Google versie. Je kunt deze vragenlijst dus ook gebruik om mensen op afstand van advies te voorzien.
 
   Temperatuur en Comfort | Temp en Comfort
-#achtergrond informatie welke factoren een rol spelen bij hoe wij comfort ervaren en dat 19 graden en 19 graden niet hetzelfde hoeft te zijn.
+#Achtergrond informatie welke factoren een rol spelen bij hoe wij comfort ervaren en dat 19 graden en 19 graden niet hetzelfde hoeft te zijn.
 
   Tab  Versie      | Versie Historie
 #Hierin worden de meeste wijzigingen per versie bijgehouden. Het is dus interessant om hier af en toe te kijken of er nog iets nieuws van uw gading is bijgekomen, of dat er belangrijke correcties zijn aangebracht. 
