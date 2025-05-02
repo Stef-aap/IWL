@@ -64,98 +64,43 @@
 #Deze sectie is alleen bestemd voor gevorderden gebruikers.
 #In deze sectie worden het tabblad "Details" uitgebreid besproken. Als het berekende gasverbruik veel afwijkt van het werkelijk gasverbruik, kunnen hier de meeste instellingen die betrekking hebben op de woning worden aangepast. Stel bijvoorbeeld het programma maakt een fors afwijkende schatting van het vloeroppervlakte of van de isolatiewaarde van de vloer, dan kunnen in het blad Details, deze parameters eenvoudig worden gewijzgd. Bij de meeste parameters zie je in het tabblad Details ook direct wat de gevolgen zijn, in de zin van gasbverbruik, van de aanpassingen die je doet.
 #Om een beter begrip van de grootheden te krijgen, wordt hier soms ook al wat meer uitgelegd van de toegepaste rekenmethode in het model.
-
-  Tab Details      | Details Algemeen
-#De algemene parameters, waarvan eigenlijk alleen de oppervlaktecorrectie soms moet worden aangepast.
-  
-  Details Vloer
-#Als de Rc-waarde van de vloer nu of na verbetering anders is dan het moedel voorspelt, kun ej die hier aanpassen.
-#Dit is een goed voorbeeld, van hoe de blokken op de details pagina werken.
-#Lees deze pagina voordat u de eerste keer iets op de detail tabblad gaat wijzigen.  
-  
-  Details Muur
-#Hier kun je oppervlakten beneden/boven en R-waarden individueel instellen.  
-  
-  Details Glas
-#Eigenlijk wordt afgeraden hier wijzigingen aan te brengen. De hoeveelheid glas en cellen J17/J18 op het Basisblad geven in het algemeen voldoende flexibiliteit om de feiteleijke situatie aan te geven.
-#Dit deel is met name nuttig als je verbeteringen wilt bestuderen van bijzondere beglazing en/of bijzondere lokaties.
-
-  Details Dak
-#Zowel de oppervlakten, alsook R-waarden van dak en zoldervloer kunnen worden aangepast. 
-  
-  Details Overig
-#Hier kunnen ventilatie en kieren wprden gefinetuned.  
-  
+  Tab Details      | Details
   Woningtypen
+  Vloer
+  Muur
+  Glas
+  Dak
+  Ventilatie
 
 
-  +Tabs
-  
-  Tab Rm           | Rc Berekening
-#Met dit tabblad kun je de R-waarde en het gasverbruik van Sandwich constructies berekenen.
-#Momenteel vind een grote renovatie van dit tabblad plaats, omdat we steed meer geïnteresseerd zijn om zo milieubewust mogelijk te isoleren.
-  
-  
-  Tab Ventilatie   | Ventilatie
-# Op dit tabblad kun je de tijdens een gesprek opgenomen CO2 meting verder analyseren.
-# Verder een aantal links naar CO2 meter en decentrale ventilatiesystemen.
-
-
-
-  Tab Truucs
-#normaal Hidden, om rekenfuncties te bewaren en te testen
-#LET OP: dat in de office versie van excel gebruik je een ; als scheiding en in 365 een,
-#(intern worden beide naar dezelfde code vertaalt en dus zijn programma's uitwisselbaar)
-
-  
-  Tab CV-Tuning
-#Een hulptabel als je een verwarmingsinstallatie waterzijdig wil inregelen (auteur Thinkpad)
-  
++Tabs
+Tab Basis        | Basis
+Tab Details      | Details
+Tab Rm           | Rc Berekening
+Tab Ventilatie   | Ventilatie
+Tab  ISDE        | Bereken ISDE
+Tab CV-Tuning
 
 
 +Berekeningen
   Berekeningen
   
 
-  + Tabs Special
-  Tab  Constants
-#Voor bouwers. Normaal gesproken is dit tabblad verborgen.
-#Dit tabblad bevat alle niet-instelbare constanten en formules, waarop de hele berekening is gestoeld.
++ Tabs Special
+Tab  Constants
+Tab  Tabellen
+Tab Truucs
+Tab BAG
 
-  Tab  Tabellen
-#Dit tabblad beavt een aantal handige tabellen, enerzijds voor bewoners en anderzijds voor de EnergieCoach.
-
-
-  Tab CASAnova  | CASAnova
-#Dit tabblad vergelijkt ons model met een programma geschreven door een echte deskundige Prof. Dr. Ing. F.D. Heidt van de universiteit Siegen. Als amateurs zijn we heel tevreden
-
-
-
-  Tab BAG    | BAG Register
-#In dit tabblad moeten de gegevens uit het BAG regester van je gemeente worden geïmporteerd.
-
-  +Rapport
-  
-  
-  Tab  Rapport
-#Met dit tabblad kan bijna geheel automatisch een rapport worden gegenereerd, waarin alle resultaten zijn opgenomen en waar de energiecoach zijn eigen toevoeging aan kan doen.
-#Momenteel is dit experimenteel en is het tabblad verborgen.
-
-  Tab Rapport-WP
-  
-  
++Rapport
+Tab  Rapport
+Tab Rapport-WP
 Tab _Text
 
 
-  +Berekeningen
-  
-  EnergieLabel
-
-
-  Tab  S-Calc
-#Berekening van het gasverbruik middels equivaent R-C netwerken.  
-
-
++Berekeningen
+EnergieLabel
+Tab  S-Calc
 
 +Model
   IWL evaluatie juni-2023
