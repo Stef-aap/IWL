@@ -12,7 +12,8 @@
 #  Xhttp://somesite/doc.html
 # daarnaast worden alle (toonbare) documenten aytomatisch meegenomen
 
-  +Inzicht Warmtelek
+  + Basis
+#  +Inzicht Warmtelek
 #Inzicht Warmtelek is rekenblad waarmee je op eenvoudige wijze inzicht kunt krijgen in het energieverlies van een woning.
 #Het programma is geschreven in Excel, is open source en wordt aangeboden onder de FreeBSD licentie.
 #
@@ -22,6 +23,8 @@
 #De resterende informatie kan interessant zijn als je meer achtergrond informatie wilt hebben over hoe iets berekend is, of zelf wijzigingen in het programma wilt aanbrengen of zelf een dergelijk programma of delen daarvan zou willen bouwen.
 #Suggesties voor verbetering van het programma zijn van harte welkom.
 #Behoefte aan bepaalde documentatie of extra uitleg, wij zien de vragen graag tegemoet.
+
+  Inleiding   | Inzicht Warmtelek
 
   Inleiding
 #De belangrijkste eigenschappen van dit programma, de vragen en het belangrijkste resultaat.  
