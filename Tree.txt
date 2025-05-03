@@ -138,7 +138,6 @@
 
   Tab Rapport-WP
 
-
   Tab _Text
 
   Tab Truucs
@@ -146,31 +145,25 @@
 #LET OP: dat in de office versie van excel gebruik je een ; als scheiding en in 365 een,
 #(intern worden beide naar dezelfde code vertaalt en dus zijn programma's uitwisselbaar)
 
+  Berekeningen
+#wat notitie die nog georganiseerd moeten worden.
+
+  Energielabel en Tapwater
+#De mening van Claude hierover
+
 
 
   +Modellen
-  
 
 
 
-#Bouwenergie Belgie: https://bouw-energie.be/nl-be/bereken/warmteverliesberekening
-
-#Duits, zeer fraai: http://nesa1.uni-siegen.de/index.htm?/softlab/casanova_e.php
-
-#Steven van Lier: https://www.joostdevree.nl/bouwkunde2/jpgw/warmtestroom_2_warmteverliezenberekening_v2.2_waaienberg_door_steven_van_lier.xls
-
-#Excel + Ubakus (Olino) : https://geen-energierekening-meer.weebly.com/warmteverlies-berekening.html
-
-#noregret rekentool (voorloper Paris Proof Plan) : https://energielinq.nl/nul-op-de-meter/no-regret-rekentool-handleiding/
-
-#Eenvoudig BouwEnergie Belgie https://bouw-energie.be/nl-be/bereken/warmteverliesberekening-frame/de-huisdokter
-
-  Tab CASAnova  | CASAnova
+  Tab CASAnova
 #Dit tabblad vergelijkt ons model met een programma geschreven door een echte deskundige Prof. Dr. Ing. F.D. Heidt van de universiteit Siegen. Als amateurs zijn we heel tevreden
 
 
   
   IWL evaluatie juni-2023
+#Hier is van de eerste 16 huizen, het berekende energieverbruik vergeleken met het werkelijk energieverbruik.
   
   Inzicht Warmtelek 3.6   vs   CASAnova 3.3.08a.html  | vs CASAnova
  
@@ -180,14 +173,7 @@
 
 
 
-
-
   Xhttps://www.buildwise.be/nl/expertise-ondersteuning/buildwise-tools/heatload-warmteverlies/   | Heatload
-
-  Xhttps://www.buildwise.be/nl/agenda/online-dimensionering-van-de-verwarming-de-heatload-tool-voor-warmteverliesberekening-in-woningen/     | Heatload webinar
-
-  http://nesa1.uni-siegen.de/softlab/download/CASAnova_Setup.exe  | Casanova Download
-
 
 
 
