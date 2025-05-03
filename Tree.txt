@@ -158,55 +158,43 @@
 #allerlei
 
 
+  http://nesa1.uni-siegen.de/index.htm?/softlab/casanova_e.php | ga naar Produkte
+  http://nesa1.uni-siegen.de/index.htm?/softlab/casanova_e.php
+  Xhttp://nesa1.uni-siegen.de/index.htm?/softlab/casanova_e.php | ga naar Produkte
+#Duits, zeer fraai:
+
+  https://bouw-energie.be/nl-be/bereken/warmteverliesberekening
+#Bouwenergie Belgie
+   https://bouw-energie.be/nl-be/bereken/warmteverliesberekening-frame/de-huisdokter
+#Eenvoudig BouwEnergie Belgie 
+
+
+
+  Inzicht Warmtelek 3.6   vs   CASAnova 3.3.08a.html  | vs CASAnova
+ 
   Tab CASAnova
 #Dit tabblad vergelijkt ons model met een programma geschreven door een echte deskundige Prof. Dr. Ing. F.D. Heidt van de universiteit Siegen. Als amateurs zijn we heel tevreden
   
   IWL evaluatie juni-2023
 #Hier is van de eerste 16 huizen, het berekende energieverbruik vergeleken met het werkelijk energieverbruik.
   
-  Inzicht Warmtelek 3.6   vs   CASAnova 3.3.08a.html  | vs CASAnova
- 
+
+
   Xhttps://www.weii.nl/rekentool | WEii Paris Proof
 #een webbased free tool, die berekent hoe goed op weg je bent naar 2050.
 
   Xhttps://www.buildwise.be/nl/expertise-ondersteuning/buildwise-tools/heatload-warmteverlies/   | Heatload
 
-  http://nesa1.uni-siegen.de/index.htm?/softlab/casanova_e.php | ga naar Produkte
 
-  https://bouw-energie.be/nl-be/bereken/warmteverliesberekening
-#Bouwenergie Belgie:
-
-  http://nesa1.uni-siegen.de/index.htm?/softlab/casanova_e.php
-#Duits, zeer fraai:
-
-  https://www.joostdevree.nl/bouwkunde2/jpgw/warmtestroom_2_warmteverliezenberekening_v2.2_waaienberg_door_steven_van_lier.xls
+  https://www.joostdevree.nl/bouwkunde2/jpgw/warmtestroom_2_warmteverliezenberekening_v2.2_waaienberg_door_steven_van_lier.xls  | Joost de Vree
 #Steven van Lier:
 
-  https://geen-energierekening-meer.weebly.com/warmteverlies-berekening.html
+  https://geen-energierekening-meer.weebly.com/warmteverlies-berekening.html   | Olino + Ubakus
 #Excel + Ubakus (Olino) :
 
   https://energielinq.nl/nul-op-de-meter/no-regret-rekentool-handleiding/
 #noregret rekentool (voorloper Paris Proof Plan) :
 
-   https://bouw-energie.be/nl-be/bereken/warmteverliesberekening-frame/de-huisdokter
-#Eenvoudig BouwEnergie Belgie 
-
-   Tab CASAnova  | CASAnova
-#Dit tabblad vergelijkt ons model met een programma geschreven door een echte deskundige Prof. Dr. Ing. F.D. Heidt van de universiteit Siegen. Als amateurs zijn we heel tevreden
-
-  IWL evaluatie juni-2023
-
-  Inzicht Warmtelek 3.6   vs   CASAnova 3.3.08a.html  | vs CASAnova
-
-  Xhttps://www.weii.nl/rekentool | WEii Paris Proof
-#een webbased free tool, die berekent hoe goed op weg je bent naar 2050.
-
-  Xhttps://www.buildwise.be/nl/expertise-ondersteuning/buildwise-tools/heatload-warmteverlies/   | Heatload
-
-  Xhttps://www.buildwise.be/nl/agenda/online-dimensionering-van-de-verwarming-de-heatload-tool-voor-warmteverliesberekening-in-woningen/     | Heatload webinar
-
-
-  http://nesa1.uni-siegen.de/softlab/download/CASAnova_Setup.exe  | Casanova Download
 
  
 
