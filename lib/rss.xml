@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Obsidian</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 12 Jul 2025 14:44:06 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 12 Jul 2025 14:44:05 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Gegevens uit het BAG register]]></title><description><![CDATA[ 
+ <br><br>
+<br>download en unzip:  berthub.eu/bagconv/pcodes.zip
+<br>open met een database browser het csv bestand
+<br>selecteer de data met "jouw" SQL regels (zie voorbeelden hieronder)
+<br>bewaar de selectie als nieuw csv bestand (dit wordt vervolgens geïmporteerd in Excel)
+<br><br><br>Gebruik een goede en handige database browser. Hier gebruik ik<br>
+DBBrowser for SQLite (free, opensource, cross-platform):<br>
+<a rel="noopener nofollow" class="external-link" href="https://github.com/sqlitebrowser/sqlitebrowser" target="_blank">https://github.com/sqlitebrowser/sqlitebrowser</a><br>
+<a rel="noopener nofollow" class="external-link" href="https://sourceforge.net/projects/db-browser-for-sqlite.mirror/" target="_blank">https://sourceforge.net/projects/db-browser-for-sqlite.mirror/</a><br>Er zijn vele andere database browsers, bijv.<br>
+SQLiteStudio  (free, opensource, cross-platform):<br>
+<a rel="noopener nofollow" class="external-link" href="https://sqlitestudio.pl" target="_blank">https://sqlitestudio.pl</a><br><br>download:  berthub.eu/bagconv/pcodes.zip<br>
+beschrijving: <a rel="noopener nofollow" class="external-link" href="https://berthub.eu/articles/posts/dutch-postcode-and-building-database/" target="_blank">https://berthub.eu/articles/posts/dutch-postcode-and-building-database/</a><br><br>als je het bestand zoekt, vergeet dan niet rechts-onderaan "alle bestandstypen" te selecteren, anders zie je het csv-bestand niet staan.<br><img height="401" src="iwl\resources\screen_20250710_181949.png" style="width: 518px; max-width: 100%;"><br>Je krijgt de eerste regels van het bestand te zien<br>
+<img src="iwl\resources\image-2.png"><br>Druk op "OK" en het bestand wordt geimporteerd als Database, dat kan een minuut duren<br>
+<img src="iwl\resources\image-9.png"><br>Het hele bestand is ingelezen<br>
+<img height="380" src="iwl\resources\image-3.png" style="width: 553px; max-width: 100%;"><br><br>
+<br>Ga naar het tabblad "Execute SQL"
+<br>Plaats de code om te selecteren (zie hieronder) in de veld van de rode cirkel
+<br>Druk op het blauwe pijltje naar rechts
+<br>en de selectie verschijnt in de groene cirkel<br>
+<img src="iwl\resources\screen_20250710_175932.png">
+<br><br>Het beste is om om plaatsnaam te selecteren, zoals in dit voorbeeld voor de gemeente Mook en Middelaar is gedaan. Voor een plaats als Amsterdam hou je dan veel te veel plaatsen over. Je zult dan of op postcode of plaatsnaam en postcode moeten zoeken.<br>
+De kollommen worden ook gelijk in exact de juiste volgorde aangemaakt, zoals ze nodig zijn in Inzicht_Warmtelek.<br>-- bij SELECT staat welke kolommen we in de tabel willen hebben
+-- CONCAT_WS maakt de eerste kolom een samenstelling van 
+--    straat + nummer + toevoeging
+select CONCAT_WS (" ", straat, CONCAT ( huisnummer, huisletter ) ) as Adres,
+       postcode, woonplaats, bouwjaar, oppervlakte, 
+	   gebruiksdoelen, straat, huisnummer, huisletter 
+  from pcodes
+-- bij WHERE staan de woonplaatsen (dorspkernen) die we willen hebben
+where woonplaats = "Middelaar"
+   or woonplaats = "Molenhoek"
+   or woonplaats = "Mook"
+   or woonplaats = "Plasmolen"
+order by Adres
+<br><img src="iwl\resources\image-5.png"><br>Je kunt ook een postcode range(s) of een combinatie van woonplaats en postcodes opgeven. Mocht je hier niet uitkomen, mag je me altijd om raad vragen. Voor Mook en Middelaar ziet er dat als volgt uit:<br>-- bij SELECT staat welke kolommen we in de tabel willen hebben
+-- CONCAT_WS maakt de eerste kolom een samenstelling van 
+--    straat + nummer + toevoeging
+select CONCAT_WS (" ", straat, CONCAT ( huisnummer, huisletter ) ) as Adres,
+       postcode, woonplaats, bouwjaar, oppervlakte, 
+	   gebruiksdoelen, straat, huisnummer, huisletter 
+  from pcodes
+-- bij WHERE staan de woonplaatsen (dorspkernen) die we willen hebben
+-- of een postcode range
+where postcode &gt;= "6584"
+  and postcode &lt; "6588"
+order by Adres
+
+<br><img src="iwl\resources\image-4.png"><br>Het resultaat is (helaas) iets kleiner, omdat er een aantal huizen is dat geen postcode heeft.<br>
+bijvoorbeeld:<br>
+<img height="263" src="iwl\resources\image-7.png" style="width: 549px; max-width: 100%;"><br>
+Elke postcode is uniek en identificeert een specifieke locatie in Nederland. De eerste twee cijfers van de postcode geven de regio aan, terwijl de laatste twee cijfers en twee letters een specifieker gebied binnen die regio aanduiden. Bijvoorbeeld, een postcode zoals 1012 AB verwijst naar een locatie in Amsterdam, terwijl 2597 KP naar een plek in Den Haag wijst. aldus<br>
+<a rel="noopener nofollow" class="external-link" href="https://uitgenodigd.nl/het-mysterie-van-de-nederlandse-postcodes-ontrafeld-hoeveel-zijn-er-eigenlijk/" target="_blank">https://uitgenodigd.nl/het-mysterie-van-de-nederlandse-postcodes-ontrafeld-hoeveel-zijn-er-eigenlijk/</a><br><br>Druk op het "floppy"-icoon, rechts van het blauwe pijltje en pas eventueel de gegevens aan, zoals in het plaatje hieronder is gedaan. <br>
+<br>Kies exporteren naar CSV
+<br>Druk vervolgens op Save
+<br>Geef een bestandsnaam
+<br><img height="336" src="iwl\resources\screen_20250710_174334.png" style="width: 562px; max-width: 100%;">]]></description><link>iwl\gegevens-uit-het-bag-register.html</link><guid isPermaLink="false">IWL/Gegevens uit het BAG register.md</guid><pubDate>Sat, 12 Jul 2025 13:14:23 GMT</pubDate><enclosure url="iwl\resources\screen_20250710_181949.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;iwl\resources\screen_20250710_181949.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Importeer BAG in Excelbestand]]></title><description><![CDATA[ 
+ <br>Het BAG register bevat het bouwjaar en het gebruikersoppervlakte van iedere woning. Het is de bedoeling dat je een klein deel van dit BAG register, namelijk een beperkte set gegevens van je eigen woonplaats of woonwijk(-en) in het rekenblad laadt.<br>Het BAG bestand kan op twee manieren worden verkregen<br>
+<br>Vanaf de originele locatie met het programma QGIS
+<br>Vanaf de site van Bert Hubert, download:  berthub.eu/bagconv/pcodes.zip<br>
+Methode 1. is een ware crime, terwijl methode 2. (met dank aan Bert die speciaal voor ons enkele wijzigingen heeft aangebracht) een simpel en helder proces is. Op Bert zijn site zijn nog andere methoden, die mogelijk interessant kunnen zijn voor de gevorderde gebruiker, zie beschrijving: <a rel="noopener nofollow" class="external-link" href="https://berthub.eu/articles/posts/dutch-postcode-and-building-database/" target="_blank">https://berthub.eu/articles/posts/dutch-postcode-and-building-database/</a>
+<br>Als je af en toe een woning in een andere gemeente doet, is het niet nodig die gemeente ook te laden, immers het handmatig opzoeken van deze 2 gegevens en in te vullen in het basis tabblad kost geen moeite.<br><br>
+<br>Haal de beveiliging van het werkboek (geen password)
+<br>Maak het tabblad "BAG"  zichtbaar
+<br>Haal de beveiliging van het tabblad "BAG" (geen password)
+<br>Maak de kolommen A t/m I leeg
+<br>Importeer het csv bestand op cel A1 (let op dit moet niet via "Load", maar via "Load to")
+<br>Zet de beveiliging weer op het tabblad,
+<br>Verberg het tabblad "BAG"
+<br>Zet de beveiliging op het werkboek weer aan
+<br><br><br><img src="iwl\resources\image-12.png"><br><br><img src="iwl\resources\image-13.png"><br>
+<br>
+Selecteer kolommen A t/m I
+
+<br>
+Del
+
+<br>
+Ga op Cel A1 staan
+
+<br>
+menu: Data 
+
+<br>
+Knop: From Text/CSV<br>
+<img height="560" src="iwl\resources\image-15.png" style="width: 494px; max-width: 100%;">
+
+<br>
+selecteer het juiste bestand
+
+<br>
+Import<br>
+<img src="iwl\resources\image-16.png">
+
+<br>gebruik nu "Load To"  en niet "Load"<br>
+<img src="iwl\resources\image-11.png"><br>kontroleer door in A6 een geldige stratnaam en nummer in te vullen<br>
+<img src="iwl\resources\image-17.png"><br>
+<br>zet de beveiliging van het tabblad weer aan
+<br>verberg dit tabblad
+<br>zet de beveiliging van het werkboek weer aan
+]]></description><link>iwl\importeer-bag-in-excelbestand.html</link><guid isPermaLink="false">IWL/Importeer BAG in Excelbestand.md</guid><pubDate>Sat, 12 Jul 2025 13:13:36 GMT</pubDate><enclosure url="iwl\resources\image-12.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;iwl\resources\image-12.png&quot;&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
