@@ -39,44 +39,24 @@
         }
     </style>
 </head>
-<body>
-<p>Op dit blad kun je de R-waarde van sandwich constructies eenvoudig berekenen en met elkaar vergelijken.</p>
-<p>Op dit moment vind een grote renovatie van deze pagina plaats, omdat we ook de milieu-impact van de verschillende isolatie materialen duidelijk in beeld willen brengen en het belang van biobased isoleren willen benadrukken. De kolom MKI is daarvoor een eerste stap.</p>
-<p>Onderstaand voorbeeld laat het effect zien van een lege spouwmuur (blauwe kolommen) en diezelfde spouwmuur voorzien van 6 cm ecoschuim (is gewoon PUR), roze kolommen.</p>
-<p>Beginnen we met de oorspronkelijke situatie, daar gebruiken we de linker blauwe kolom voor.<br />
-Vul je de dikte van ieder sandwich element in, hier dus</p>
+<body><h1>Rc Berekening</h1>
+<p>Op dit blad kun je de R-waarde van sandwich constructies eenvoudig berekenen en met elkaar vergelijken. Je kunt hier ook de milieu-impact en de benodigde dikte van de verschillende isolatie materialen vergelijken.<br />
+Onderstaand voorbeeld laat het effect zien van een lege spouwmuur (blauwe kolommen) en diezelfde spouwmuur voorzien van 6 cm eps parels, roze kolommen.<br />
+<img alt="image-32.png" src="resources/image-32.png" /></p>
+<p>We zien dat de isolatiewaarde van deze oorspronkelijke muur Rt = 0.59 bedraagt.<br />
+Rt = Rtotaal, in de volksmond meestal aangeduid met Rc = Rconstructie<br />
+De nageïsoleerde muur heeft een Rc=2.17.</p>
+<p>Als we nu het effect van deze verbeterde muur op het gasverbruik willen zien, gaan we naar de onderkant van de tabel en vullen daar de kolom B in. In dit geval :</p>
 <ul>
-<li>10 cm baksteen</li>
-<li>10 cm kalkzandsteen</li>
-<li>Spouw &gt; 18 mm, hier hoef enkel een kruisje neer te zetten</li>
+<li>een benedenverdieping op 18 graden met 60 m2 muur, bespaart 106 m3 gas</li>
+<li>een bovenverdieping op 10 graden met 50 m2 muur, bespaart 445 m3 gas</li>
+<li>een totale besparing van 551 m3 gas</li>
 </ul>
-<p>In de rechter blauwe kolom komt nu de bijdrage van die sandwich component tot de Rc-waarde. Bijvoorbeeld baksteen heeft een bijdrage van 0.17 aan de Rt waarde.<br />
-Cel D29 is een keuzecel, waarin je aangeeft of het om vloer/muur/dak gaat. Afhankelijk van de keuze komt er nog een klein beetje isolatie bij, als gevolg van de langsstromende lucht (Rsi+Rse).<br />
-We zien dat de isolatiewaarde van deze oorspronkelijke muur Rt = 0.59 bedraagt.<br />
-Rt = Rtotaal, in de volksmond meestal aangeduid met Rc = Rconstructie</p>
-<p>Nu vullen we op dezelfde manier de linker roze kolom in met</p>
-<ul>
-<li>10 cm baksteen</li>
-<li>10 cm kalkzandsteen</li>
-<li>6 cm Enverifoam (PUR schuim)</li>
-<li>We halen uiteraard het kruisje bij spouw weg, want die is er niet meer</li>
-</ul>
-<p>We vinden nu Rt =2.12</p>
-<p>Voor documentatie, dit soort berekeningen kan ook interessant zijn voor technisch geschoolde bewoners, kun je op regel 31 nog een naam invoeren.</p>
+<p><img alt="image-35.png" src="resources/image-35.png" /></p>
 <p>Extra verliezen, bijv als gevolg van spouwankers worden hier weggelaten. Omdat vergelijken het belangrijkste is, spelen die factoren ook geen grote rol van betekenis.</p>
-<p>Hierna kun je ook nog eens expliciet naar de gasbesparing gaan kijken, zie hieronder</p>
-<p><img alt="image1" src="resources/299f4bb584914e5e95580356bbfa1efb.png" /></p>
-<h1 id="gasbesparing">Gasbesparing</h1>
-<p>Als we nu willen zien wat dat aan gasbesparing oplevert, kunnen we gebruik maken van de regels 33 t/m 40.</p>
-<ul>
-<li>Cel B33 = de gemiddelde temperatuur op de begane grond (dit bepaald namelijk het aantal graaddagen)</li>
-<li>Cel B34 = oppervlakte van begane grond</li>
-<li>Cel B36 = de gemiddelde temperatuur boven</li>
-<li>Cel B37 = oppervlakte van boven</li>
-</ul>
-<p>Begane grond en boven zijn hier arbitrair gekozen, je kunt beter denken in verwarmde en onverwarmde ruimte.<br />
-En vervolgens zie je het gasverbruik van dit bouwdeel en de totale gasbesparing in de blauwe cel.<br />
-De isolatie van de verwarmde ruimte bespaart ruim 360 m3 gas, terwijl dezelfde verbetering van de onverwarmde ruimten (die zelfs iets groter zijn) slechts 125 m3 gas bespaart.</p>
-<p><img alt="image2" src="resources/0b0220b8c47e4725b7fd8603bc93a1a3.png" /></p>
+<p>In kolom B staat de milieu-impact van het isolatie materiaal, deze is genormaliseerd op een Rd=1, dus je kunt de materialen op deze basis absoluut met elkaar vergelijken.<br />
+Hoe lager deze waarde, hoe groener de cel, en hoe lager de milieu-impact bij een gewenste Rc waarde. Momenteel zijn alle waarden gebaseerd op de MKA-1 factoren, hopelijk worden in de loop van het jaar de MKA-2 waarden (veel meer milieu factoren worden daarin meegenomen) van alle materialen bekend en kunnen we de tabel aanpassen.</p>
+<p>Als je in cel D48 de gewenste Rc waarde invult, hier Rc=3.5, krijg je in kolom D de benodigde dikte van het isolatie materiaal numeriek en grafisch weergegeven. Je ziet hier dat PIF Biobased een biobased produkt is met de hoogste isolatie waarde. (Biobased producten heeft de naam van het produkt een groene achtergrond.)</p>
+<p><img alt="image-37.png" src="resources/image-37.png" /></p>
 </body>
 </html>

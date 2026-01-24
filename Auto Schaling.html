@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Schaling</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            line-height: 1.6; 
+        }
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 20px 0; 
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        blockquote {
+            border-left: 4px solid #ddd;
+            margin: 20px 0;
+            padding-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body><h1><b>NEW</b> Auto Schaling</h1>
+<p>Met Auto-Schaling wordt het gasverbruik door het model berekend gelijk gemaakt aan het werkelijk gasverbruik.<br />
+Dit kan soms nuttig zijn omdat het voor sommige mensen duidelijker maakt wat er te besparen valt. </p>
+<p>De auto-schaling vindt plaats door het aantal graaddagen aan te passen.<br />
+Verbruikselementen die niet van graaddagen afhankelijk zijn, zoals bijvoorbeeld warm water verbruik blijven onveranderd. <br />
+Om de auto-schaling aan te zetten, moet je zorgen dat cel J19 niet leeg is en moet uiteraard het werkelijk gasverbruik zijn ingevuld.<br />
+In cell J20 zie dan hoeveel het gasverbruik is aangepast, in onderstaand geval 88%, het werkelijk gasverbruik is dus 12% lager dan het model voorspelt.<br />
+Als het werkelijk gasverbruik hoger is dan het rekenmodel voorspelt, wordt J20 dus hoger dan 100%.</p>
+<p>Waarschuwing: bij afwijkingen groter dan 20%, moet je eerst eens goed nagaan of er toch niet iets verkeerds is ingevuld. Nagenoeg alle gevallen met een grote afwijking die wij gezien hebben, waren te corrigeren door het aanpassen van de antwoorden.</p>
+<table>
+<thead>
+<tr>
+<th>Zonder Auto Schaling</th>
+<th>Met Auto Schaling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="image-50.png" src="resources/image-50.png" /><br></td>
+<td><img alt="image-49.png" src="resources/image-49.png" /><br></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

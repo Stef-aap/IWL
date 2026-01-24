@@ -26,9 +26,10 @@
 \#Behoefte aan bepaalde documentatie of extra uitleg, wij zien de vragen graag tegemoet.
 \#
 \# <b>NEW in versie 4.0:</b>
-\# - Milieuimpact van isolatiematerialen (MKI-score) opgenomen
-\# - Informatie over glas opgenomen (veel glaszetters zijn niet op de hoogte van spacers, geluidsdemping en veiligheid)
-\# - Schaling van het gasverbruik mogelijk
+\# - <b>Milieuimpact</b> van isolatiematerialen (MKI-score) opgenomen
+\# - Informatie over <b>glas</b> opgenomen (veel glaszetters zijn niet op de hoogte van spacers, geluidsdemping en veiligheid)
+\# - <b>Auto-Schaling</b> van het gasverbruik mogelijk
+\# - <b>OnderKelderd</b> kan worden aangegeven: Nee / Half / Ja (experimenteel Rc+=0.5)
 
 
   Inzicht Warmtelek
@@ -39,6 +40,9 @@
 
   Resultaat
 \#Bespreking van de resultaten op het basis-blad
+
+  Auto Schaling  |   <b>NEW</b> Auto Schaling
+\#Vanaf versie 4.0 is Auto-Schaling van het gasverbruik mogelijk. Lees deze pagina voordat je er gebruik van gaat maken.
 
   Resultaat 2
 \#Extra informatie, mogelijkheden om commentaar toe te voegen en eigen berekeningen uit te voeren.
@@ -80,6 +84,10 @@
   Tab Rm           | Rc Berekening
 \#Met dit tabblad kun je de isolatiewaarde (R-waarde) en het gasverbruik van Sandwich constructies berekenen.
 \#Momenteel vind een grote renovatie van dit tabblad plaats. Omdat we steeds meer geïnteresseerd zijn om zo milieubewust mogelijk te isoleren, genieten materialen met een lage milieu-impact en zelfs  BioBased de voorkeur.
+
+  Tab Glas  | Glas Info
+\#Veel nuttige informatie over glas, thermische isolatie waarde, het effect van de spacer, geluidsisolatie. Tevens aandacht voor letselveiligheid en doorvalveiligheid van glas, wanneer het toegepast moet worden en welke keuzen je hebt.
+\#Veel glaszetters missen hier een hoop kennis.
   
   Tab Ventilatie   | Ventilatie
 \#Op dit tabblad kun je de tijdens een gesprek opgenomen CO2 meting verder analyseren.
@@ -197,6 +205,12 @@
   Xhttps://www.weii.nl/rekentool | WEii Paris Proof
 \#een webbased free tool, die berekent hoe goed op weg je bent naar 2050.
 
+   Xhttps://www.verbeterjehuis.nl/eigen-huis  | Milieu Centraal
+\# met simpele vragen naar een analyse
+
+   https://verbeterjehuis.smarttwin.nl/accountlogin  | Smart Twin
+\# 3D analyse, verglijkbaar met Milieu Centraal, maar dan echt met alle uitbouwen van het huis in 3D
+  
   Xhttps://www.buildwise.be/nl/expertise-ondersteuning/buildwise-tools/heatload-warmteverlies/   | Heatload
 \#Buildwise Belgie, uitgebreide warmtverlies berekening
 
