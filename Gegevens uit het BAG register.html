@@ -60,13 +60,13 @@ SQLiteStudio  (free, opensource, cross-platform): <br />
 beschrijving: https://berthub.eu/articles/posts/dutch-postcode-and-building-database/</p>
 <h2 id="open-met-dbbrowser-het-csv-bestand">Open met DBbrowser het CSV-bestand</h2>
 <p>als je het bestand zoekt, vergeet dan niet rechts-onderaan "alle bestandstypen" te selecteren, anders zie je het csv-bestand niet staan.<br />
-<img alt="image-21.png" src="resources/image-21.png" /></p>
+<img alt="image_21.png" src="resources/image_21.png" /></p>
 <p>Je krijgt de eerste regels van het bestand te zien<br />
-<img alt="image-22.png" src="resources/image-22.png" /></p>
+<img alt="image_22.png" src="resources/image_22.png" /></p>
 <p>Druk op "OK" en het bestand wordt geimporteerd als Database, dat kan een minuut duren<br />
-<img alt="image-23.png" src="resources/image-23.png" /></p>
+<img alt="image_23.png" src="resources/image_23.png" /></p>
 <p>Het hele bestand is ingelezen<br />
-<img alt="image-24.png" src="resources/image-24.png" /></p>
+<img alt="image_24.png" src="resources/image_24.png" /></p>
 <h2 id="selecteer-de-gewenste-rijen">Selecteer de gewenste rijen</h2>
 <ul>
 <li>Ga naar het tabblad "Execute SQL"</li>
@@ -74,7 +74,7 @@ beschrijving: https://berthub.eu/articles/posts/dutch-postcode-and-building-data
 <li>Druk op het blauwe pijltje naar rechts</li>
 <li>en de selectie verschijnt in de groene cirkel<br />
 Heb je eenmaal de juiste SQL regels voor jouw gebied samengesteld, bewaar deze dan goed zodat je ze volgende keer weer kunt gebruiken.<br />
-<img alt="image-25.png" src="resources/image-25.png" /></li>
+<img alt="image_25.png" src="resources/image_25.png" /></li>
 </ul>
 <h2 id="de-selectiecode">De selectiecode</h2>
 <p>Het beste is om om plaatsnaam te selecteren, zoals in dit voorbeeld voor de gemeente Mook en Middelaar is gedaan. Voor een plaats als Amsterdam hou je dan veel te veel plaatsen over. Je zult dan of op postcode of plaatsnaam en postcode moeten zoeken.<br />
@@ -93,7 +93,7 @@ where woonplaats = "Middelaar"
    or woonplaats = "Mook"
    or woonplaats = "Plasmolen"
 order by Adres</code><br />
-<img alt="image-26.png" src="resources/image-26.png" /></p>
+<img alt="image_26.png" src="resources/image_26.png" /></p>
 <p>Je kunt ook een postcode range(s) of een combinatie van woonplaats en postcodes opgeven. Mocht je hier niet uitkomen, mag je me altijd om raad vragen. Voor Mook en Middelaar ziet er dat als volgt uit:<br />
 ``` SQL<br />
 -- bij SELECT staat welke kolommen we in de tabel willen hebben<br />
@@ -109,10 +109,10 @@ where postcode &gt;= "6584"<br />
   and postcode &lt; "6588"<br />
 order by Adres</p>
 <p>```<br />
-<img alt="image-27.png" src="resources/image-27.png" /></p>
+<img alt="image_27.png" src="resources/image_27.png" /></p>
 <p>Het resultaat is (helaas) iets kleiner, omdat er een aantal huizen is dat geen postcode heeft.<br />
 bijvoorbeeld: <br />
-<img alt="image-28.png" src="resources/image-28.png" /><br />
+<img alt="image_28.png" src="resources/image_28.png" /><br />
 Elke postcode is uniek en identificeert een specifieke locatie in Nederland. De eerste twee cijfers van de postcode geven de regio aan, terwijl de laatste twee cijfers en twee letters een specifieker gebied binnen die regio aanduiden. Bijvoorbeeld, een postcode zoals 1012 AB verwijst naar een locatie in Amsterdam, terwijl 2597 KP naar een plek in Den Haag wijst. aldus <br />
 https://uitgenodigd.nl/het-mysterie-van-de-nederlandse-postcodes-ontrafeld-hoeveel-zijn-er-eigenlijk/</p>
 <h2 id="resultaat-opslaan">Resultaat opslaan</h2>
@@ -120,6 +120,6 @@ https://uitgenodigd.nl/het-mysterie-van-de-nederlandse-postcodes-ontrafeld-hoeve
 - Kies exporteren naar CSV<br />
 - Druk vervolgens op Save<br />
 - Geef een bestandsnaam<br />
-<img alt="image-29.png" src="resources/image-29.png" /></p>
+<img alt="image_29.png" src="resources/image_29.png" /></p>
 </body>
 </html>
