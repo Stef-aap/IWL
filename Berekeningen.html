@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berekeningen</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            line-height: 1.6; 
+        }
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 20px 0; 
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        blockquote {
+            border-left: 4px solid #ddd;
+            margin: 20px 0;
+            padding-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<h1 id="details-woningtype">Details WoningType</h1>
+<p>Tussenwoning<br />
+Hoekwoning<br />
+Vrijstaand<br />
+Semi-bungalow = GebruiksOppervlakte wordt voor 2/3 op de begane grond gesitueerd<br />
+Bungalow = GebruiksOppervlakte wordt geheel verdeeld over de begane grond</p>
+<h1 id="details-energielabel">Details EnergieLabel</h1>
+<p>Het energieverbruik per m2 GebruikersOppervlakte wordt berekend door het optellen van de volgende elementen<br />
+- kWh nodig voor verwarming (verondersteld door gas, dus PEF=1.0)<br />
+- kWh voor warm tapwater (forfaitaire waarde uit de NTA8800)<br />
+- kWh voor de installaties, rekening houdende met de PEF<br />
+- kWh opgebracht door zonnepanelen, rekening houdend met de PEF</p>
+<h1 id="details-warm-tapwater">Details Warm tapwater</h1>
+<p>Je kunt er van uitgaan dat het gasverbruik voor het koken verwaarloosbaar is. Daardoor kun jet werkelijk gasverbruik voor bad en douche erg goed inschatten op basis van het verbruik in de zomermaanden. Vul die waarde in het roze veld. Hieronder een 2-persoons huishouden dat vrij zuinig doucht, maar toch een zeer hoog verbruik heeft (60 m3 moet goed mogelijk zijn). Dit blijkt een oude CV-ketel te zijn die niet uit de comfortstand gehaald kan worden.</p>
+<p><img alt="image1" src="resources/48d3a96adade4bfc8608b1055acce0f2.png" /></p>
+<h1 id="gasverbruik-door-een-bouwelement">Gasverbruik door een bouwelement</h1>
+<p>Aan het rekenblad Rt, is een extra berekening voor het gasverbruik toegevoegd.<br />
+Hier als voorbeeld een huis met een lege spouwmuur, Rt=0.6 (cel E30).<br />
+Als de muur 6 cm spouwbreedte heeft, wordt bij na-isolatie de Rt=2.1 (cel H30).<br />
+Stel er wordt alleen op de begane grond verwarmd,<br />
+dan vullen we de gemiddelde temperatuur beneden en het muuroppervlakte in cellen B33 en B34.<br />
+De gemiddelde temperatuur en oppervlakte van de bovenverdieping en zolder vullen we in in B36 en B37.<br />
+We zien dat het "gasverbruik" van de totale muur nu 683 m3 bedraagt (cell E39)<br />
+Na isolatie bedraagt het gasverbuik van de muur 189 m2 (cell H39).<br />
+De winst bedraagt dus 494 m3 gas per jaar (cell G40)</p>
+<p><img alt="image2" src="resources/aee797ecba954ac480bb9c012f1937fd.png" /></p>
+</body>
+</html>

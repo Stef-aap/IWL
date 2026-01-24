@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab  Versie</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            line-height: 1.6; 
+        }
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 20px 0; 
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        blockquote {
+            border-left: 4px solid #ddd;
+            margin: 20px 0;
+            padding-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<h1 id="tested">Tested</h1>
+<table>
+<thead>
+<tr>
+<th>Werkt onder</th>
+<th>- Excel-2019, Excel-Prof-2021, Excel-365<br>- Libre Office Calc 6.4.3.2 7.4.6<br>- Google (adrescheck conditional formatting werkt niet)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Werkt niet onde</td>
+<td>- Open Office Calc 4.1.5 4.1.14</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><br>Het versienummer is te vinden op het Basisblad<br><br>In cell Y1</th>
+<th><img alt="image1" src="resources/c9a5bcbd20d74bc9a442a6d3fc0182fe.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="todo">ToDo</h2>
+<ul>
+<li>Als rapport protected is, kun je geen plaatjes plakken ???</li>
+<li>investerings rendement zonnepanelen (rekening houdend met afbouwende saldering</li>
+<li>SCOP als functie van de huidige retourtemperatuur ?</li>
+<li>Vergelijking met andere modellen</li>
+<li>Vergelijking met Energielabel rapporten</li>
+<li>Documentatie speciale gevallen</li>
+</ul>
+<h2 id="versie-40-23-1-2026">Versie 4.0  23-1-2026</h2>
+<ul>
+<li><strong>Milieu Impact</strong> = MKI-score (waarde en kleur) toegevoegd aan tabblad Rm, </li>
+<li><strong>Benodigde dikte</strong> voor een gewenste Rc-waarde toegevoegd aan tabblad Rm</li>
+<li>Tabblad Rm, het <strong>gasverbruik</strong> bij verschillende sandwichconstructies kan nu eenvoudig worden vergeleken (twee verschillende ruimtetemperaturen, bijvoorbeeld boven en onder verdieping)</li>
+<li>In het verborgen tabblad <strong>MKI</strong>, vind je links naar de MKI score</li>
+<li><strong>Tabblad GLAS</strong> toegevoegd met informatie (isolatiewaarde, spacers, geluidsdemping, veiligheid en prijs) van veel gebruikte glascomposities</li>
+<li></li>
+<li><strong>Onderkelderd</strong> toegevoegd (de Rc waarde van de vloer wordt dan verhoogd)</li>
+<li><strong>Directe Invoer Ug</strong> waarde glas verplaatst naar J6=Boven, J7=Onder</li>
+<li><strong>Schaling Gasverbruik</strong>, Model op echt gasverbruik, door iets in J18 te zetten</li>
+<li><strong>Muuroppervlakten</strong> aanpasbaar in tabblad Details</li>
+<li></li>
+<li>Warmteverlies Verbeterd Glas, werd fout berekend als het werkelijke glas een Ug&lt;1 had</li>
+<li>ISDE subsidie uptodate gemaakt (2026)</li>
+<li>WEii pagina toegevoegd, hier kan wat geexperimenteerd worden</li>
+<li>Tabblad Tabellen verwijderd en vervangen door tabblad Glas</li>
+</ul>
+<h2 id="versie-39-3-5-2025">Versie 3.9  3-5-2025</h2>
+<ul>
+<li>Correctie tabel "als geen jaarverbruik bekend"</li>
+<li>Verhoogde subsidies in tabblad Tabellen per 1-1-2025 toegevoegd</li>
+<li>Tonzon en Deck-VQ toegevoegd aan Rm berekening</li>
+<li>Onder Rm-tabel rekenfunctie voor gasverbuik per m2 en totaal gasverbruik</li>
+<li>Tabellen, subsidie, minimale m2 gecorrigeerd naar 2025 waarden</li>
+</ul>
+<h2 id="versie-38">Versie 3.8</h2>
+<ul>
+<li>Warmtepomp SCOP, default 4.5 verlaagd naar 4.0</li>
+<li>Woningtype (semi-)bungalow toegevoegd</li>
+<li>Vloerverwarming Onderverdieping kan nu ook "half" worden gekozen</li>
+<li>Warmtepomp vermogen op grond van exact verlies, beta gewijzigd van 0.8 naar 1.0</li>
+<li>Gasverbruik per maand (model + huidig) tabel toegevoegd rechtsonder. Als je op regel 58 zelf een waarde invult, wordt deze waarde gebruikt voor de berekende kolom erboven.</li>
+<li>Energielabel is verbeterd door echte berekening uit de NTA8800 te gebruiken. Tapwater=forfaitair + zonnepanelen PEF toegepast. Het EnergieLabel wordt daardoor iets slechter</li>
+</ul>
+<h2 id="versie-36">Versie 3.6</h2>
+<ul>
+<li>Biobased Bonus toegevoegd aan subsidietabel</li>
+<li>???? <a href="https://papagreen.org/energie/opwekken/warmtepomp/kw-vermogen-warmtepomp-bepalen/">https://papagreen.org/energie/opwekken/warmtepomp/kw-vermogen-warmtepomp-bepalen/</a></li>
+<li>Vergelijking met CASAnova toegevoegd</li>
+<li>tabblad Details, Oppervlakte Muren zelf op te geven, cel B107-B109</li>
+<li>Bungalow toegevoegd (nu even als "Geen_Verdieping"):</li>
+<li>.... Diepte (B37) wordt verdubbeld</li>
+<li>.... Zoldervloer Rc =0.001 (0 geeft fout)</li>
+<li>.... Glas Opp Beneden (B64) wordt opgehoogd met glas Boven (B65) en Glas Boven (B65) wordt op 0 gezet</li>
+<li>.... Muur Boven Opp (B101) = 0</li>
+<li>.... Muur Zolder Opp (B102) = 0</li>
+<li>Warmtepomp vermogen op basis van Gawalo nov 2024 toegevoegd (hoe-dimensioneer-je-een-warmtepompsysteem)</li>
+</ul>
+<h2 id="versie-35-30-07-2024">Versie 3.5 30-07-2024</h2>
+<ul>
+<li>cel onder de tabel mocht niet worden ge-edit</li>
+<li>onderaan licht-gele cellen toegevoegd, waarin gerekend kan worden</li>
+<li>kosten op basis van RVO kengetallen, zie: <a href="https://kostenkentallen.rvo.nl/">https://kostenkentallen.rvo.nl/</a></li>
+<li>Ventilatie en Thermische Energie per m2 waren te laag berekend (ketel-rendement in teller ipv noemer)</li>
+<li>Vermogen WarmtePomp op basis van exact verlies bij -10 Celsius</li>
+<li>EnergieLabels rekening houdend zonder en met zonnepanelen</li>
+<li>default beta Full Electric Warmtepomp verlaagd naar 0.8 (geen invloed op bestaande formules)</li>
+<li>Volgorde van deze pagina omgedraaid, zodat nieuwste wijzigingen boven aan komen te staan</li>
+</ul>
+<h1 id="_1"></h1>
+<h2 id="versie-33-21-04-2024">Versie 3.3 21-04-2024</h2>
+<ul>
+<li>simple ISDE subsidie 2024 toegevoegd</li>
+</ul>
+<h1 id="_2"></h1>
+<h2 id="versie-32">Versie 3.2</h2>
+<ul>
+<li>NIET FRAAI, maar heel handig: je kunt nu de huidige Ug van het glas op het hoofdbald invullen:</li>
+<li>… J17 = Ug Boven</li>
+<li>… J18 = Ug Beneden</li>
+<li>tekstveld onder de tabel toegevoegd</li>
+<li>Rapport-WP versie 1.0 toegevoegd</li>
+<li>BSD license toegevoegd</li>
+<li>CV-Tuning van Thnkpad toegevoegd</li>
+</ul>
+<h1 id="_3"></h1>
+<h2 id="versie-30">Versie 3.0</h2>
+<ul>
+<li>Oppervlakte verlaagd afhankelijk van het type woning. Het BAG register registreert alle oppervlakte die aan het hoofdgebouw vastzitten. Voor energieverliesben je enkel geinteresseerd in het potentieel verwarmde oppervlakte.</li>
+<li>Zie : <a href="https://imbag.github.io/praktijkhandleiding/attributen/oppervlakte">https://imbag.github.io/praktijkhandleiding/attributen/oppervlakte</a></li>
+<li>Voor vrijstaand / hoekhuis / tussenwoning wordt het oppervlakte verlaagd met 20% / 10% / 0%</li>
+<li>Op basisblad Regel 32 toegevoegd, vrij in te vullen voor bijvoorbeeld een apart berekende aanbouw</li>
+<li>Thermische energie per m2 aangepast door warm tapwater eruit te halen (Warmtepomp Vermogen is ook zonder Warm Tapwater)</li>
+<li>Mogelijkheid om in detail gasverbruik voor warmwater expliciet op te geven (bv op basis van het maandverbruik in de zomer)</li>
+</ul>
+<h1 id="_4"></h1>
+<h2 id="versie-24">Versie 2.4</h2>
+<ul>
+<li>Adres kan worden opgezocht in lijst</li>
+</ul>
+<h2 id="versie-23-28-05-2023">Versie 2.3 28-05-2023</h2>
+<ul>
+<li>BAG gegevens via index,match opzoeken levert geen besparing van gebruik tabblad BAG (i.v.m. wijzigen gemeente)</li>
+<li>BAG register in een apart bestand onder te brengen lukt ook niet (365 kan het niet, en zodra het aparte bestand gesloten is, moet Excel een absoluut path hebben)</li>
+<li>Procedure om een andere gemeente in te vullen hierboven beschreven (slechts één cel D2 wijzigen)</li>
+<li>Tab "Basis", commentaar regels (behalve glas) kunnen nu ge-edit worden</li>
+<li>Tab "Rm", aantal biobased isolatiematerialen toegevoegd</li>
+<li>Tab "Tabellen", Rc waarde vs Bouwjaar opgenomen</li>
+<li>Tab "Tabellen", subsidie tabel opgenomen</li>
+<li>Tab "Versie" handige links bovenaan toegevoegd</li>
+<li>Tabs verwijderd: Sheet1, Sheet2, Huis, Resume, Groepssom, Vragen, Turflijst, Rap222, Rap333</li>
+<li>Bevat eerste versie van de rapportgenerator (verre van af)</li>
+</ul>
+<h2 id="versie-22">Versie 2.2</h2>
+<ul>
+<li>Huizen voor 1900 gaven problemen, ondergens verschoven naar 1800</li>
+<li>Legenda bevat nu de totale hoeveelheid gas</li>
+</ul>
+<h2 id="versie-17">Versie 1.7</h2>
+<ul>
+<li>Vloertemperatuur gecontroleerd</li>
+<li>E-Coach bezoek vinkje toegevoegd</li>
+<li>legenda ook in huisjes</li>
+<li>background arcering gewijzigd in een afwijkende kleur (kan 365 niet aan)</li>
+<li>tijdelijk vragen en GroepsSom toegevoegd</li>
+</ul>
+<h2 id="versie-16">Versie 1.6</h2>
+<ul>
+<li>Aanpakken Kieren leverde geen resultaat op tabblad Basis</li>
+<li>Correctie_Bouwjaar (default=1) toegevoegd (tekeningen die moeten voldoen aan het bouwbesluit zijn vaak ouder)</li>
+<li>Muurnaisolatie keuze ingeperkt tot ja/nee. Verder als spouwmuur leeg, dan maximaal 5 cm isolatie toevoegen, als reeds iets aanwexzig, slechts 2.5 cm toevoegen.</li>
+<li>Verbruik warm water als vraag toegevoegd (weinig/normaal/veel), moet nog in de documentatie worden aangepast</li>
+</ul>
+<h2 id="versie-15-12-04-2023">Versie 1.5 12-04-2023</h2>
+<ul>
+<li>default beta warmtepomp van 0.8 naar 1.0 ivm Koevlaas formule</li>
+<li>Markering op basis tabblad als er ergens een detaillering</li>
+<li>Handmatig BAG gegevens als adres niet gevonden</li>
+<li>Rc veranderd naar Rt</li>
+</ul>
+<h1 id="_5"></h1>
+<h2 id="versie-13-05-04-2023">Versie 1.3 05-04-2023</h2>
+<ul>
+<li>disclaimer toegevoegd</li>
+<li>graadje lager toegevoegd</li>
+<li>kWh/m2 toegevoegd</li>
+<li>vermogen warmtepomp toiegeveoged</li>
+<li>bestandsnaam gewijzigd (simpel verwijderd)</li>
+<li>CO2 / Bomen /. Euro's toegevoegd</li>
+<li>default waarde voor constanten toegevoegd</li>
+<li>Warmtepomp en benodigde toegevoegd</li>
+<li>Muurisolatie versimpeld, ja/nee en simpel spouw bijvullen</li>
+</ul>
+<h1 id="_6"></h1>
+<h2 id="versie-12">Versie 1.2</h2>
+<ul>
+<li>Vloertemperatuur toegevoegd</li>
+<li>Vragen over Email. Gasverbruik, aantal zonnepanelen toegevoegd</li>
+</ul>
+<h1 id="_7"></h1>
+<h2 id="versie-11-02-04-2023">Versie 1.1 02-04-2023</h2>
+<ul>
+<li>Kieren optimaal naar 1[l/s] per m2</li>
+</ul>
+<h1 id="_8"></h1>
+<h2 id="versie-10">Versie 1.0</h2>
+<ul>
+<li>Plasmolen was vergeten uit het BAG register te laden.</li>
+</ul>
+<h1 id="_9"></h1>
+<h2 id="versie-09-30-03-2023">Versie 0.9 30-03-2023</h2>
+<ul>
+<li>Kieren detaillering toegevoegd</li>
+<li>Oppervlakte Temperaturen op basis bals toegevoegd</li>
+<li>detaillering hoef je nu enekl de veranderingen in te vullen</li>
+<li>Interne Warmtelast toegevoegd</li>
+</ul>
+<h2 id="versie-05">Versie 0.5</h2>
+<ul>
+<li>Dak detaillering</li>
+</ul>
+<h2 id="versie-04-24-03-2023">Versie 0.4 24-03-2023</h2>
+<ul>
+<li>Muur detaillering</li>
+<li>Diepte/Breedte detaillering</li>
+</ul>
+<h2 id="versie-03-23-03-2023">Versie 0.3 23-03-2023</h2>
+<ul>
+<li>vloer detailering toegevoegd</li>
+</ul>
+<h2 id="versie-02-20-03-2023">Versie 0.2 20-03-2023</h2>
+<ul>
+<li>Zoninstraling toegevoegd en orde van grootte gecontroleerd</li>
+<li>Versie tabblad toegevoegd</li>
+</ul>
+<h2 id="versie-01-01-12-2022">Versie 0.1 01-12-2022</h2>
+<ul>
+<li>Eerste vrijgegeven versie</li>
+</ul>
+</body>
+</html>

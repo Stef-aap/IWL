@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gegevens uit het BAG register</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            line-height: 1.6; 
+        }
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 20px 0; 
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        blockquote {
+            border-left: 4px solid #ddd;
+            margin: 20px 0;
+            padding-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<h2 id="kort-samengevat">Kort samengevat</h2>
+<p>Dit is de nieuwe methode, die veel gemakkelijker werkt dan de oude methode met de site van het kadaster en het programma QGIS. Deze methode is mogelijk gemaakt door het voorbereidende werk van Bert Hubert, zie  https://berthub.eu/articles/posts/dutch-postcode-and-building-database/<br />
+- download en unzip:  https://berthub.eu/bagconv/pcodes.zip<br />
+- open met een database browser het csv bestand<br />
+- selecteer de data met "jouw" SQL regels (zie voorbeelden hieronder)<br />
+- bewaar de selectie als nieuw csv bestand (dit wordt vervolgens geïmporteerd in Excel)</p>
+<h1 id="uitgebreid">Uitgebreid</h1>
+<h2 id="install-browser-for-sqlite">Install Browser for SQLite</h2>
+<p>Gebruik een goede en handige database browser. Hier gebruik ik<br />
+DBBrowser for SQLite (free, opensource, cross-platform):<br />
+  https://github.com/sqlitebrowser/sqlitebrowser<br />
+  https://sourceforge.net/projects/db-browser-for-sqlite.mirror/</p>
+<p>Er zijn vele andere database browsers, bijv.<br />
+SQLiteStudio  (free, opensource, cross-platform): <br />
+  https://sqlitestudio.pl</p>
+<h2 id="download-het-csv-bestand">Download het CSV-bestand</h2>
+<p>download:  https://berthub.eu/bagconv/pcodes.zip<br />
+beschrijving: https://berthub.eu/articles/posts/dutch-postcode-and-building-database/</p>
+<h2 id="open-met-dbbrowser-het-csv-bestand">Open met DBbrowser het CSV-bestand</h2>
+<p>als je het bestand zoekt, vergeet dan niet rechts-onderaan "alle bestandstypen" te selecteren, anders zie je het csv-bestand niet staan.<br />
+<img alt="image-21.png" src="resources/image-21.png" /></p>
+<p>Je krijgt de eerste regels van het bestand te zien<br />
+<img alt="image-22.png" src="resources/image-22.png" /></p>
+<p>Druk op "OK" en het bestand wordt geimporteerd als Database, dat kan een minuut duren<br />
+<img alt="image-23.png" src="resources/image-23.png" /></p>
+<p>Het hele bestand is ingelezen<br />
+<img alt="image-24.png" src="resources/image-24.png" /></p>
+<h2 id="selecteer-de-gewenste-rijen">Selecteer de gewenste rijen</h2>
+<ul>
+<li>Ga naar het tabblad "Execute SQL"</li>
+<li>Plaats de code om te selecteren (zie hieronder) in de veld van de rode cirkel</li>
+<li>Druk op het blauwe pijltje naar rechts</li>
+<li>en de selectie verschijnt in de groene cirkel<br />
+Heb je eenmaal de juiste SQL regels voor jouw gebied samengesteld, bewaar deze dan goed zodat je ze volgende keer weer kunt gebruiken.<br />
+<img alt="image-25.png" src="resources/image-25.png" /></li>
+</ul>
+<h2 id="de-selectiecode">De selectiecode</h2>
+<p>Het beste is om om plaatsnaam te selecteren, zoals in dit voorbeeld voor de gemeente Mook en Middelaar is gedaan. Voor een plaats als Amsterdam hou je dan veel te veel plaatsen over. Je zult dan of op postcode of plaatsnaam en postcode moeten zoeken.<br />
+De kollommen worden ook gelijk in exact de juiste volgorde aangemaakt, zoals ze nodig zijn in Inzicht_Warmtelek.<br />
+<code>SQL
+-- bij SELECT staat welke kolommen we in de tabel willen hebben
+-- CONCAT_WS maakt de eerste kolom een samenstelling van 
+--    straat + nummer + toevoeging
+select CONCAT_WS (" ", straat, CONCAT ( huisnummer, huisletter ) ) as Adres,
+       postcode, woonplaats, bouwjaar, oppervlakte, 
+       gebruiksdoelen, straat, huisnummer, huisletter 
+  from pcodes
+-- bij WHERE staan de woonplaatsen (dorspkernen) die we willen hebben
+where woonplaats = "Middelaar"
+   or woonplaats = "Molenhoek"
+   or woonplaats = "Mook"
+   or woonplaats = "Plasmolen"
+order by Adres</code><br />
+<img alt="image-26.png" src="resources/image-26.png" /></p>
+<p>Je kunt ook een postcode range(s) of een combinatie van woonplaats en postcodes opgeven. Mocht je hier niet uitkomen, mag je me altijd om raad vragen. Voor Mook en Middelaar ziet er dat als volgt uit:<br />
+``` SQL<br />
+-- bij SELECT staat welke kolommen we in de tabel willen hebben<br />
+-- CONCAT_WS maakt de eerste kolom een samenstelling van <br />
+--    straat + nummer + toevoeging<br />
+select CONCAT_WS (" ", straat, CONCAT ( huisnummer, huisletter ) ) as Adres,<br />
+       postcode, woonplaats, bouwjaar, oppervlakte, <br />
+       gebruiksdoelen, straat, huisnummer, huisletter <br />
+  from pcodes<br />
+-- bij WHERE staan de woonplaatsen (dorspkernen) die we willen hebben<br />
+-- of een postcode range<br />
+where postcode &gt;= "6584"<br />
+  and postcode &lt; "6588"<br />
+order by Adres</p>
+<p>```<br />
+<img alt="image-27.png" src="resources/image-27.png" /></p>
+<p>Het resultaat is (helaas) iets kleiner, omdat er een aantal huizen is dat geen postcode heeft.<br />
+bijvoorbeeld: <br />
+<img alt="image-28.png" src="resources/image-28.png" /><br />
+Elke postcode is uniek en identificeert een specifieke locatie in Nederland. De eerste twee cijfers van de postcode geven de regio aan, terwijl de laatste twee cijfers en twee letters een specifieker gebied binnen die regio aanduiden. Bijvoorbeeld, een postcode zoals 1012 AB verwijst naar een locatie in Amsterdam, terwijl 2597 KP naar een plek in Den Haag wijst. aldus <br />
+https://uitgenodigd.nl/het-mysterie-van-de-nederlandse-postcodes-ontrafeld-hoeveel-zijn-er-eigenlijk/</p>
+<h2 id="resultaat-opslaan">Resultaat opslaan</h2>
+<p>Druk op het "floppy"-icoon, rechts van het blauwe pijltje en pas eventueel de gegevens aan, zoals in het plaatje hieronder is gedaan. <br />
+- Kies exporteren naar CSV<br />
+- Druk vervolgens op Save<br />
+- Geef een bestandsnaam<br />
+<img alt="image-29.png" src="resources/image-29.png" /></p>
+</body>
+</html>

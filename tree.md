@@ -1,0 +1,219 @@
+\# programma Parse_Tree.py gebruikt Tree.txt om een website te maken.
+\# EDIT DEZE TEKST IN NOTEPAD\+\+
+\# this is comment
+\# Deze bovenste regels worden niet meegenomen in de notes
+\#
+\# Voorbeelden:
+\#  Name.pdf
+\#  Name.pdf | DisplayName
+\#  http://somesite/doc.html
+\#  http://somesite/doc.html  | ShowName
+\# als embedding niet is toegestaan, zet een "X" voor de link
+\#  Xhttp://somesite/doc.html
+\# daarnaast worden alle (toonbare) documenten automatisch meegenomen
+
+  \+ Basis
+\#Inzicht Warmtelek is rekenblad waarmee je op eenvoudige wijze inzicht kunt krijgen in het energieverlies van een woning.
+\#Het programma is geschreven in Excel, is open source en wordt aangeboden onder de FreeBSD licentie.
+\# het programma kan hier worden gedownload  <a href="https://stef-aap.github.io/Duurzaam/Inzicht_Warmtelek.xlsx">Download</a>
+\#Het rekenblad als totaal is beveiligd (zonder wachtwoord), evenals ieder tabblad (ook zonder wachtwoord), om ongewenste veranderingen te voorkomen.
+\#
+\#Deze website bevat alle documentatie en achtergrond informatie over het programma.
+\#Voor een simpel gebruik wordt geadviseerd om alle documenten in de sectie <b>Basis</b> te lezen.
+\#Voor een geavanceerd gebruik wordt geadviseerd om aanvullend sectie <b>Basis Extra</b> te lezen.
+\#De resterende informatie kan interessant zijn als je meer achtergrond informatie wilt hebben over hoe iets berekend is, of zelf wijzigingen in het programma wilt aanbrengen of zelf een dergelijk programma of delen daarvan zou willen bouwen.
+\#Suggesties voor verbetering van het programma zijn van harte welkom.
+\#Behoefte aan bepaalde documentatie of extra uitleg, wij zien de vragen graag tegemoet.
+\#
+\# <b>NEW in versie 4.0:</b>
+\# - Milieuimpact van isolatiematerialen (MKI-score) opgenomen
+\# - Informatie over glas opgenomen (veel glaszetters zijn niet op de hoogte van spacers, geluidsdemping en veiligheid)
+\# - Schaling van het gasverbruik mogelijk
+
+
+  Inzicht Warmtelek
+\#De belangrijkste eigenschappen van dit programma, de vragen en het belangrijkste resultaat.  
+
+  De Basis Vragen  | Basis Vragen
+\#De Basisvragen die minimaal beantwoord moeten worden en een toelichting hierop, plus een paar bijzondere velden op het basis-blad.
+
+  Resultaat
+\#Bespreking van de resultaten op het basis-blad
+
+  Resultaat 2
+\#Extra informatie, mogelijkheden om commentaar toe te voegen en eigen berekeningen uit te voeren.
+
+  Tab  ISDE        | Bereken ISDE
+\#Dit tabblad berekent voor de geadviseerde isolatieverbeteringen de mogelijke ISDE subsidie. Oppervlakten die door dit model foutief zijn ingeschat kunnen hier worden gecorrigeerd. Het programma houdt rekening met verdubbeling van de subsidie in geval van meerdere maatregelen.
+
+  Uitleg Bewoners
+\#Als je de bewoners het basisblad verstrekt, is het goed om deze (of een andere zelf geschreven) uitleg bij te voegen. Meer dan het basisblad geven we meestal niet aan bewoners omdat de rest meer vragen oproept dan vragen beantwoord. Door in deze tekst de plaatjes te vervangen door de plaatjes van de woning die bekeken wordt en eigen commentaar toe te voegen kan een eenvoudig rapport worden gemaakt.
+ 
+  Web Links
+\#Een aantal links die behulpzaam kunnen zijn bij het verzamelen van bruikbare informatie voor de bewoners,
+\#Hier worden geen links gegeven naar soort gelijke programma's, zie daarvoor ...
+
+  Gasverbruik
+\#Sommige bewoners hebben erg veel moeite om hun jaarrekening en dus het jaarverbruik boven tafel te krijgen. Op het basisblad is een tabel aanwezig, waarmee je behoorlijk goed het jaarverbruik kunt schatten aan de hand van het gasverbruik in 2 of 3 wintermaanden. Ik heb een aantal goede ervaringen waarbij ik op basis van het gebruik in jan en feb het verbruik (en de besparing van een aantal maatregelen) in de maand maart heb voorspeld (binnen de 10% nauwkeurig).
+
+  Web Vragenlijst
+\#De Basisvragen zoals we die aan bewoners opsturen voordat we bij ze op bezoek gaan. Het blijkt dat nagenoeg iedereen deze vragenlijst correct kan invullen. Hij is zowel beschikbaar in een Teams- als in een Google versie. Je kunt deze vragenlijst dus ook gebruik om mensen op afstand van advies te voorzien.
+
+  Temperatuur en Comfort | Temp en Comfort
+\#Achtergrond informatie welke factoren een rol spelen bij hoe wij comfort ervaren en dat 19 graden en 19 graden niet hetzelfde hoeft te zijn.
+
+  Tab  Versie      | Versie Historie
+\#Hierin worden de meeste wijzigingen per versie bijgehouden. Het is dus interessant om hier af en toe te kijken of er nog iets nieuws van uw gading is bijgekomen, of dat er belangrijke correcties zijn aangebracht. 
+
+  Licentie
+\#Tekst van de FreeBSD licentie
+
+
+
+
+  \+Basis Extra
+
+  Graaddagen_Stookgrens
+\#Wat zijn graaddagen, hoe worden graaddagen berekend.
+\#Graaddagen zijn afhankelijk van hoe goed een woning geïsoleerd is, dit geef je aan met de Stookgrens.
+  
+  Tab Rm           | Rc Berekening
+\#Met dit tabblad kun je de isolatiewaarde (R-waarde) en het gasverbruik van Sandwich constructies berekenen.
+\#Momenteel vind een grote renovatie van dit tabblad plaats. Omdat we steeds meer geïnteresseerd zijn om zo milieubewust mogelijk te isoleren, genieten materialen met een lage milieu-impact en zelfs  BioBased de voorkeur.
+  
+  Tab Ventilatie   | Ventilatie
+\#Op dit tabblad kun je de tijdens een gesprek opgenomen CO2 meting verder analyseren.
+\#Verder een aantal links naar CO2 meter en decentrale ventilatiesystemen.
+  
+  Tab CV-Tuning
+\#Een hulptabel als je een verwarmingsinstallatie waterzijdig wil inregelen (auteur Thinkpad)
+  
+  Tab  Tabellen
+\#Dit tabblad bevat een aantal handige tabellen, enerzijds voor bewoners en anderzijds voor de EnergieCoach.
+
+
+
+
+
+
+  \+Details
+\#Deze sectie is alleen bestemd voor gevorderde gebruikers.
+\#In deze sectie worden het tabblad "Details" uitgebreid besproken. Als het berekende gasverbruik veel afwijkt van het werkelijk gasverbruik, kunnen hier de meeste instellingen die betrekking hebben op de woning worden aangepast. Stel bijvoorbeeld het programma maakt een fors afwijkende schatting van het vloeroppervlakte of van de isolatiewaarde van de vloer, dan kunnen in het blad Details, deze parameters eenvoudig worden gewijzgd. Bij de meeste parameters zie je in het tabblad Details ook direct wat de gevolgen zijn, in de zin van gasverbruik, van de aanpassingen die je doet.
+\#Om een beter begrip van de grootheden te krijgen, wordt hier soms ook al wat meer uitgelegd van de toegepaste rekenmethode in het model.
+
+  Tab Details      | Details Algemeen
+\#De algemene parameters, waarvan eigenlijk alleen de oppervlaktecorrectie soms moet worden aangepast.
+  
+  Details Vloer
+\#Als de Rc-waarde van de vloer nu of na verbetering anders is dan het moedel voorspelt, kun je die hier aanpassen.
+\#Dit is een goed voorbeeld, van hoe de blokken op de details pagina werken.
+\#Lees deze pagina voordat u de eerste keer iets op de detail tabblad gaat wijzigen.  
+  
+  Details Muur
+\#Hier kun je oppervlakten beneden/boven en R-waarden individueel aanpassen.  
+  
+  Details Glas
+\#Eigenlijk wordt afgeraden hier wijzigingen aan te brengen. De hoeveelheid glas en cellen J17/J18 op het Basisblad geven in het algemeen voldoende flexibiliteit om de feiteleijke situatie correct te modeleren.
+\#Dit deel is met name nuttig als je verbeteringen wilt bestuderen van bijzondere beglazing en/of bijzondere lokaties.
+
+  Details Dak
+\#Zowel de oppervlakten, alsook R-waarden van dak en zoldervloer kunnen worden aangepast. 
+  
+  Details Overig
+\#Hier kunnen ventilatie en kieren worden gefinetuned.  
+  
+
+
+  \+Cases
+\#ToDo
+\#Het idee is dat hier (anonieme) voorbeelden komen te staan, waarbij de antwoorden op de standaard vragen tot een te grote afwijking van de praktijk hebben geleid. Het meest interessante is natuurlijk welke verklaringen hiervoor verantwoordelijk kunnen zijn en hoe je door kleine aanpassingen een beter resultaat kunt krijgen.
+
+  Case 1
+  
+  
+  \+Ontwerpers
+
+  Importeer BAG in Excelbestand
+\# Doel van het BAG tabblad en hoe deze te vullen
+
+  Gegevens uit het BAG register   |   ImportBAG new
+\#Importeer op een simpele manier het BAG register met de tool ban Bert Hubert (van Cloud Kootwijk)
+
+  Tab BAG    | Import BAG oud
+\#In dit tabblad moeten de gegevens uit het BAG regester van je gemeente worden geïmporteerd.
+
+  Tab  Constants
+\#Voor bouwers. Normaal gesproken is dit tabblad verborgen.
+\#Dit tabblad bevat alle niet-instelbare constanten en formules, waarop de hele berekening is gestoeld.
+
+  Tab  S-Calc
+\#Berekening van het gasverbruik middels equivaent R-C netwerken.  
+
+
+  Tab  Rapport
+\#Met dit tabblad kan bijna geheel automatisch een rapport worden gegenereerd, waarin alle resultaten zijn opgenomen en waar de energiecoach zijn eigen toevoeging aan kan doen.
+\#Momenteel is dit experimenteel en is het tabblad verborgen.
+
+  Tab Rapport-WP
+
+  Tab _Text
+
+  Tab Truucs
+\#normaal Hidden, om rekenfuncties te bewaren en te testen
+\#LET OP: dat in de office versie van excel gebruik je een ; als scheiding en in 365 een,
+\#(intern worden beide naar dezelfde code vertaalt en dus zijn programma's uitwisselbaar)
+
+  Berekeningen
+\#wat notitie die nog georganiseerd moeten worden.
+
+  Energielabel en Tapwater
+\#De mening van Claude hierover
+
+
+
+  \+Modellen
+\#Hieronder een aantal soortgelijke programma's.
+\#Verder een paar vergelijkingen tussen Inzicht_Warmtelek en deze andere programma's.
+\#Op de ToDo lijst staat nog de vergelijking van Inzicht_Warmtelek met EnergieLabel rapporten.
+
+  Xhttp://nesa1.uni-siegen.de/index.htm?/softlab/casanova_e.php | CASAnova -> Produkte
+\#CASAnova een uitgebreid freeware programma geschreven door een echte deskundige Prof. Dr. Ing. F.D. Heidt van de universiteit Siegen. Deze link werkt niet meer en het programma is moeilijk (niet?) te vinden op internet. Heb je belangstelling, kun je van mij een kopie krijgen.
+
+  https://bouw-energie.be/nl-be/bereken/warmteverliesberekening  | Bouw-Energie
+\#Redelijk eenvoudige goede gratis webtool vor de berekening van het warmteverlies.
+
+  Inzicht Warmtelek_3.6_vs_CASAnova.html  | IWL vs CASAnova
+\#Vergelijking Inzicht_Warmtelek met CASAnova
+ 
+  Tab CASAnova
+\#Dit tabblad vergelijkt ons model met een programma geschreven door een echte deskundige Prof. Dr. Ing. F.D. Heidt van de universiteit Siegen. Als amateurs zijn we heel tevreden
+  
+  IWL evaluatie juni-2023
+\#Hier is van de eerste 16 huizen, het berekende energieverbruik vergeleken met het werkelijk energieverbruik.
+
+  WEii and Paris Proof
+\#Wat vragen rondom Paris Proof
+
+  Xhttps://www.weii.nl/rekentool | WEii Paris Proof
+\#een webbased free tool, die berekent hoe goed op weg je bent naar 2050.
+
+  Xhttps://www.buildwise.be/nl/expertise-ondersteuning/buildwise-tools/heatload-warmteverlies/   | Heatload
+\#Buildwise Belgie, uitgebreide warmtverlies berekening
+
+  https://www.joostdevree.nl/bouwkunde2/jpgw/warmtestroom_2_warmteverliezenberekening_v2.2_waaienberg_door_steven_van_lier.xls  | Joost de Vree (download)
+\#auteur: Steven van Lier
+
+  https://geen-energierekening-meer.weebly.com/warmteverlies-berekening.html   | Olino \+ Ubakus
+\#Excel \+ Ubakus (Olino) :
+
+  https://energielinq.nl/nul-op-de-meter/no-regret-rekentool-handleiding/   | No-Regret-Tool
+\#noregret rekentool (voorloper Paris Proof Plan) :
+
+
+ 
+
+ 
+
+ 
+
+ 

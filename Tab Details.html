@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Details</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            line-height: 1.6; 
+        }
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 20px 0; 
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        blockquote {
+            border-left: 4px solid #ddd;
+            margin: 20px 0;
+            padding-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<p>Belangrijk is om op te merken dat de meeste velden beveiligd zijn en je kunt ze dus niet per ongeluk veranderen.<br />
+De enige waarde die hier soms aangepast moet worden is de Oppervlakte Correctie C9.<br />
+Een verder uitleg van de heier gebruikte parameters is te vinden in de sectie voor ontwerpers.</p>
+<p>Dit is het begin van het tabblad details, waarin allerlei algemene parameters zijn gedefinieerd.<br />
+Als je naar de kleurencodering kijkt,<br />
+<img alt="image1" src="resources/84e6048e03b94fcb9bf49ae0ab005fe5.png" /><br />
+Zie je dat je hier weinig hoeft in te vullen. Alle noodzakelijke velden zijn al gevuld met een initiële waarde.</p>
+<p>De ervaring leert dat het enige veld dat je hier soms moet veranderen is de oppervlakte correctie C9. Als startwaarde voor het gebruiksoppervlakte van de woning wordt namelijk de waarde uit het BAG register gebruikt. Als de woning echter een aangebouwde garage o.i.d. heeft, die via een deur met het woongedeelte is verbonden, telt de garage mee als gebruiksoppervlakte. Om het verwarmd oppervlakte te verkrijgen moeten we dus een correctie factor invoeren. Het default waarde B9, is afhankelijk van het woningtype (gedefinieerd in WT_Table).<br />
+In onderstaand voorbeeld betreft het een vrijstaande woning, waarvan het bewoonbaar (mogelijk verwarmd) oppervlakte wordt ingeschat op 80%. Is er geen aangelegen garage o.i.d., zet dan C9 op 100%.</p>
+<p><img alt="image2" src="resources/5f9439548db746a293657bf384697804.png" /></p>
+</body>
+</html>

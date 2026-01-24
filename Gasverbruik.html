@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasverbruik</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            line-height: 1.6; 
+        }
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 20px 0; 
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        blockquote {
+            border-left: 4px solid #ddd;
+            margin: 20px 0;
+            padding-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<h1 id="als-geen-jaarverbruik-bekend">Als geen jaarverbruik bekend</h1>
+<p>Op het basisblad is een tabel toegevoegd om een schatting te maken van het jaarverbruik gas.</p>
+<p>Het huidig gasverbruik, berekend door het model, is weergegeven in cel AC57. Op basis van dit berekende gasverbruik en de verdeling van graaddagen over de maanden, rekening houdend met het verbruik van warm tapwater, wordt hieruit het maandverbruik in de kolom AC45 - AC56 berekend.</p>
+<p>Vul nu voor een aantal maanden in de kolom AE45 - AE56 het gasverbruik van een aantal maanden in (liefst van een aantal wintermaanden). In dit voorbeeld zijn de maanden jan/ feb / maart ingevuld.</p>
+<p><img alt="image1" src="resources/1a832bb5b26e43788958dcb22c389947.png" /></p>
+<p>Vergelijk nu beide kolommen en geef op basis hiervan in cel AC58 een schatting van het jaarverbruik.</p>
+<p><img alt="image2" src="resources/f6d301044ab4459389c29bec1dfe4a9b.png" /><br />
+Dan zullen de maand-verbruiken in de cellen AC45-AC56 worden aangepast.<br />
+Na enig proberen, zien we dat een schatting van 1040 m3 gas per jaar een goede overeenkomst geeft voor het gasverbruik over de maanden die we hebben ingevuld.</p>
+</body>
+</html>

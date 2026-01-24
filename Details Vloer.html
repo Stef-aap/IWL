@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Vloer</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            line-height: 1.6; 
+        }
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 20px 0; 
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        blockquote {
+            border-left: 4px solid #ddd;
+            margin: 20px 0;
+            padding-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<p>Dit is ook een goed en eenvoudig voorbeeld, van hoe de diverse blokken op dit tabblad werken.</p>
+<p>Bij de vloer details zie je twee situaties (roze blokken in kolom A).<br />
+In kolom J zie door de rode \&lt;\&lt;\&lt; arcering welk van deze twee blokken gebruikt wordt in de berekening.<br />
+In de laatste regel zie je ook "Nu in gebruik" welke parameters het rekenmodel gebruikt.<br />
+<img alt="image1" src="resources/69dbc9d7135a4ee7b46fc228bfe3eb4f.png" /><br />
+We zien hier ook hoe het gasverbruik per deelelement (bij de begane grond vloer is helaas maar 1 deelelement) verandert als de voorgestelde verbetering wordt uitgevoerd.</p>
+<p>Zodra het roze veld E65 wordt ingevuld, springt de rode &gt;&gt;&gt; arcering naar het tweede blok, wordt de laatste regel aangepast en worden de parameters in het tweede blok toegepast in de berekeningen.<br />
+Stel de vloer heeft een betere isolatiewaarde (2.1) dan dat het model heeft ingeschat (1.3), vul dan deze waarde in cel E65 in.<br />
+Je hebt nu ook de mogelijkheid om andere parameters (gele velden) zoals kruipruimte correctie en vloerverwarmingscorrectie aan te passen. Zie daarvoor de teksten rechts van dit blok.<br />
+<img alt="image2" src="resources/4b07b98dcf6b41b0aef182fce96c6868.png" /></p>
+<h1 id="vloerverwarming">Vloerverwarming</h1>
+<p>Deze woning heeft geen vloerverwarming op de begane grond. Als we op het basisblad aangeven dat er wel vloerverwarming op de begane grond is, wordt de correctiefactor C53 gewijzigd van 1 naar 1.5, waardoor het gasverbruik F53 ook fors toeneemt (hetgeen natuurlijk te verwachten is).<br />
+We zien ook dat het model voorstelt om de Rc waarde (H53) te verhogen van 3.7 naar 6.0. Het gevolg is dat ook bij vloerverwarming het gasverbruik van de vloer (I53) weer in evenwicht komt met de rest van het huis.</p>
+<p><img alt="image3" src="resources/999f70ecad6049f497b4c2f2ab69b7a5.png" /></p>
+<h1 id="correctie-factoren">Correctie Factoren</h1>
+<p>Alleen voor zeer gevorderden.<br />
+Bij de correctiefactoren zijn de volgende verduidelijkingen geplaatst:</p>
+<h1 id="_1"></h1>
+<p>Kruipruimte correctie om te corrigeren dat de temperatuur van de kruipruimte ergens tussen de binnen en de buitentemperatuur in zit. De lerarenopleiding natuurkunde van de Hogeschool Utrecht gebruikt 0.8. NTA8800-2023, p 148, correctiefactor voor vloer op zand of vloer op kruipruimte fls=0.7. Voor een nauwkeuriger berekening zou je de temperatuur van de kruipruimte over het jaar moeten intergreren:<br />
+Tkruipruimte=11.2 + 0.08 * Tbuiten (NTA8800 bevat tabel met maandbuitentemperaturen)</p>
+<p>De correctie voor vloerverwarming is nodig omdat de vloer bij vloerverwarming gemiddeld veel warmer is en dus meer warmte verliest. Milieu Centraal adviseert een Rc van 5 bij vloerverwarming in plaats van de 3.7 uit het bouwbesluit, daarmee suggererend een factor 1.35. Stel de gemiddelde temperatuur van de kruipruimte is 10 graden, zonder vloerverwarming is de temperatuur van de vloer 16 graden, met vloerverwarming gemiddeld 25 graden, dan kom je tot een factor 2.5. Daarmee is dus een factor 1.5 nog aan de conservatieve kant.<br />
+NTA 8800 - 2023 geeft p16, p941: Tkruipruimte = 11.2 + 0.08 * Tbuiten (maandgemiddelde)</p>
+</body>
+</html>

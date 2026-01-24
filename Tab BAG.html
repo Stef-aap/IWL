@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab BAG</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            line-height: 1.6; 
+        }
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 20px 0; 
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        blockquote {
+            border-left: 4px solid #ddd;
+            margin: 20px 0;
+            padding-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<p>Het BAG register bevat het bouwjaar en het gebruikersoppervlakte van iedere woning. Het is de bedoeling dat je een klein deel van dit BAG register, namelijk een beperkte set gegevens van je eigen woonplaats of woonwijk in het rekenblad laadt.</p>
+<p>Als je af en toe een woning in een andere gemeente doet, is het niet nodig die gemeente ook te laden, immers het handmatig opzoeken van deze 2 gegevens en in te vullen in het basis tabblad kost geen moeite.</p>
+<p>De inhoud van het tabblad ziet er als volgt uit. Da data is gesorteerd op straatnaam + huisnummer.</p>
+<p><img alt="image1" src="resources/c332396488014bfab1acbfe6824068c1.png" /></p>
+<p>Om te zien of de data goed is geladen, kun je in cel K6 een bestaande straatnaam + nummer invullen, als de data correct is, worden eronder correcte gegevens weergegeven.<br />
+<img alt="image2" src="resources/370220b1db2543dab295332a7cb7b893.png" /></p>
+<h1 id="vullen-tabblad-bag">Vullen tabblad BAG</h1>
+<ul>
+<li>met QGis (zie hieronder) de data extraheren uit de landelijke database</li>
+<li>zet deze data in het exact hetzelfde format als het tabblad "BAG" NOTE:</li>
+<li>de eerste kolom bevat een formule, deze kun je heel gemakkelijk over de gehele kolom verspreiden,</li>
+<li>door te dubbelklikken op de autofill handle,</li>
+<li>zie: <a href="https://trumpexcel.com/apply-formula-to-entire-column-excel/">https://trumpexcel.com/apply-formula-to-entire-column-excel/</a></li>
+<li>Geef dit tabblad een logische naam bijv. "BAG2" en maak het tabblad onzichtbaar</li>
+<li>Zet in cell D2 van tabblad "Details" de naam van het nieuwe tabblad bijv "BAG2"</li>
+<li>via Name Manager: variable "AdresTabel" moet refereren naar nieuwe tabblad bijv: "BAG2!\$A:\$A" (dollartekens zijn essentieel)</li>
+<li>Verwijder het tabblad "BAG" (DIT MOET ECHT DE LAATSTE STAP ZIJN, anders krijg je #REF fouten die je formules helemaal kapot maken)</li>
+</ul>
+<h1 id="met-qgis-data-extraheren">Met QGIS data extraheren</h1>
+<p>Selecteren van een gemeente<br />
+Stap 0: browse linksboven naar de database GeoPackage: bag-light.gpkg<br />
+- Links-Boven, Open de package<br />
+- Links-Boven, Dubbelklik woonplaats (gaat naar beneden en zie je in het hoofdveld)<br />
+- Woonplaats layer (beneden) , rechtsklik | filter (deze query is case-sensitive)<br />
+"woonplaats"="Mook" OR<br />
+"woonplaats"="Molenhoek" OR<br />
+"woonplaats"="Middelaar" OR<br />
+"woonplaats"="Plasmolen"<br />
+- Links-boven, Dubbelklik op verblijfsobjecten<br />
+- BELANGRIJK (omdat het anders tering lang duurt), zoom maximaal in op het gefilterde gebied<br />
+- Command balk Tools(soort sterretje), rechts opent zicht een lijst net tools<br />
+- Zoek hierin "Clip" en activeer deze met dubbelklik<br />
+- Invoerlaag = Verblijfsobjecten<br />
+- Overlaylaag = Woonplaats<br />
+- Nu verschijnt een nieuwe layer "clipped"<br />
+- Rechtsklik op clipped en export</p>
+<p><img alt="image3" src="resources/d45635d6387a452489c797f90cab35e3.png" /></p>
+<p>Stap 1: Laad de woonplaats Utrecht in.<br />
+Door dubbel op ‘woonplaats’ te klikken binnen de BAG GeoPackage wordt de laag met woonplaatsen geladen in<br />
+QGIS. Met de rechtermuisknop kunt u op deze laag ‘woonplaats’ klikken waardoor er verschillende opties<br />
+zichtbaar worden, waaronder de optie ‘Filteren’. Met deze optie kunt u enkel de gegevens van een woonplaats<br />
+filteren, zoals Utrecht in dit voorbeeld. In de Querybuilder voert u in de query: "woonplaats" = 'Utrecht' in en klikt<br />
+u op ‘OK’. In het scherm wordt als resultaat de geometrie van de woonplaats Utrecht getoond.<br />
+Voordat u verder gaat met de selectie van de gegevens, zoomt u eerst in totdat de woonplaats Utrecht<br />
+schermvullend is. Dit zorgt ervoor dat het laden van de gegevens in de volgende stap minder doorlooptijd kost.</p>
+<p>Stap 2: Laad de gegevens van de verblijfsobjecten in.<br />
+In tegenstelling tot bij de meeste andere producten van de BAG zijn in de BAG GeoPackage de adressen<br />
+verzameld bij de verblijfobjecten. Door deze informatie te exporteren, kunt u over een lijst van alle adressen<br />
+beschikken.<br />
+Kadaster ¿ Beschrijving BAG GeoPackage<br />
+Inhoud en mogelijkheden van de BAG GeoPackage<br />
+Versie 1.0 ¿ 5 / 9<br />
+Door dubbel te klikken op het verblijfsobject, kunt u de verblijfsobjecten inladen. U zult zien dat de bolletjes van<br />
+de verblijfsobjecten ook doorlopen buiten het gebied van Utrecht. Dit gaan we filteren in de volgende stap.<br />
+Stap 3: Filter op enkel de verblijfsobjecten binnen de woonplaats Utrecht<br />
+Bovenin de taakbalk is de functionaliteit ‘Toolbox’ beschikbaar. Hiermee is te zoeken binnen de<br />
+beschikbare functionaliteiten van QGIS. Door op ‘Toolbox’ te klikken, wordt er aan de rechterzijde van het scherm<br />
+een zoekscherm geopend. Voor het filteren gaan we gebruikmaken van de functionaliteit genaamd ‘Clippen’.<br />
+Deze functionaliteit vindt u door in de zoekterm ‘clippen’ in te vullen. Door dubbel te klikken op het woord ‘clippen’<br />
+kunt u de functie raadplegen.<br />
+De invoerlaag is de laag met de verblijfsobjecten en de overleglaag is de laag met de woonplaats, zoals hieronder<br />
+is weergegeven. Na het selecteren van de juiste lagen, klikt u op ‘Uitvoeren’ waarna u op ‘Close’ kunt klikken</p>
+<p><em>From \&lt; <a href="https://www.kadaster.nl/documents/1953498/3143362/Beschrijving+BAG+GeoPackage.pdf/161c2988-ad44-41dd-4d16-79faf2ed9b92?t=1660211275893">https://www.kadaster.nl/documents/1953498/3143362/Beschrijving+BAG+GeoPackage.pdf/161c2988-ad44-41dd-4d16-79faf2ed9b92?t=1660211275893</a>&gt;</em></p>
+<h1 id="get-database-en-programma">Get database en programma</h1>
+<p>Download Geopackage: <a href="https://service.pdok.nl/lv/bag/atom/bag.xml">https://service.pdok.nl/lv/bag/atom/bag.xml</a></p>
+<p>Installeer het freeware programma QGIS: <a href="https://www.qgis.org/en/site/forusers/download.html">https://www.qgis.org/en/site/forusers/download.html</a></p>
+<p>Voorbeelden om data te extraheren en te exporteren naar het gewenst bestandformaat:<br />
+<a href="https://www.kadaster.nl/documents/1953498/3143362/Beschrijving+BAG+GeoPackage.pdf/161c2988-ad44-41dd-4d16-79faf2ed9b92?t=1660211275893#%5B%7B%22num%22%3A30%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C82%2C396%2C0%5D">https://www.kadaster.nl/documents/1953498/3143362/Beschrijving+BAG+GeoPackage.pdf/161c2988-ad44-41dd-4d16-79faf2ed9b92?t=1660211275893#%5B%7B%22num%22%3A30%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C82%2C396%2C0%5D</a></p>
+</body>
+</html>
